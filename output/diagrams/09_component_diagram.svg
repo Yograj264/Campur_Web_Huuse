@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="10" y="18" width="250" height="382" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd; stroke-dasharray: 5, 3;"/>
+			<text x="20" y="383" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,766) scale(1,-1)">Browser components</text>
+			<rect x="35" y="295" width="200" height="60" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="75.348" y="322.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,644) scale(1,-1)">Screens + modal components</text>
+			<rect x="35" y="186" width="200" height="60" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="119.9925" y="219.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,438) scale(1,-1)">App.tsx</text>
+			<text x="83.8485" y="207.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,414) scale(1,-1)">Navigation + shared state</text>
+			<rect x="35" y="65" width="200" height="60" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="124.245" y="98.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,196) scale(1,-1)">api.ts</text>
+			<text x="88.857" y="86.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,172) scale(1,-1)">Fetch + CSRF headers</text>
+			<path d="M 135,295 L 135,246 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="135 246, 132.3902 251.4027, 137.6098 251.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<path d="M 135,186 L 135,125 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="135 125, 132.3902 130.4027, 137.6098 130.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="290" y="18" width="460" height="382" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd; stroke-dasharray: 5, 3;"/>
+			<text x="300" y="383" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,766) scale(1,-1)">Django components</text>
+			<rect x="320" y="295" width="175" height="60" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="364.6105" y="322.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,644) scale(1,-1)">Project + portal URLs</text>
+			<rect x="320" y="186" width="175" height="60" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="383.7445" y="219.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,438) scale(1,-1)">portal.views</text>
+			<text x="349.7245" y="207.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,414) scale(1,-1)">Bootstrap / actions / answers</text>
+			<rect x="320" y="65" width="175" height="60" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="380.491" y="98.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,196) scale(1,-1)">portal.models</text>
+			<text x="381.4945" y="86.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,172) scale(1,-1)">ORM entities</text>
+			<path d="M 407.5,295 L 407.5,246 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="407.5 246, 404.8902 251.4027, 410.1098 251.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<path d="M 407.5,186 L 407.5,125 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="407.5 125, 404.8902 130.4027, 410.1098 130.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<path d="M 235,95 L 275,95 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 275,95 L 275,325 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 275,325 L 320,325 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="320 325, 314.5973 322.3902, 314.5973 327.6098" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="253.052" y="216.0" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,432) scale(1,-1)">HTTP / JSON</text>
+			<rect x="545" y="295" width="175" height="60" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="590.8525" y="322.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,644) scale(1,-1)">Django admin + auth</text>
+			<rect x="545" y="186" width="175" height="60" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="609.496" y="219.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,438) scale(1,-1)">Middleware</text>
+			<text x="596.8645" y="207.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,414) scale(1,-1)">Sessions + CSRF</text>
+			<rect x="545" y="65" width="175" height="60" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="587.9815" y="92.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,184) scale(1,-1)">seed_demo command</text>
+			<path d="M 632.5,295 L 635,275 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 635,275 L 520,275 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 520,275 L 520,95 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 520,95 L 495,95 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="495 95, 500.4027 97.60979, 500.4027 92.39021" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<path d="M 545,216 L 495,216 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="495 216, 500.4027 218.6098, 500.4027 213.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<path d="M 545,95 L 495,95 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="495 95, 500.4027 97.60979, 500.4027 92.39021" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

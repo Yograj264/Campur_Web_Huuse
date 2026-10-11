@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="5" y="10" width="240" height="395" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd; stroke-dasharray: 5, 3;"/>
+			<text x="15" y="388" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,776) scale(1,-1)">Student / browser</text>
+			<rect x="255" y="10" width="240" height="395" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd; stroke-dasharray: 5, 3;"/>
+			<text x="265" y="388" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,776) scale(1,-1)">Django</text>
+			<rect x="505" y="10" width="250" height="395" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd; stroke-dasharray: 5, 3;"/>
+			<text x="515" y="388" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,776) scale(1,-1)">SQLite</text>
+			<circle cx="125" cy="365" r="7" style="stroke: rgb(9%,16%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,16%,30%); fill-rule: evenodd;"/>
+			<rect x="35" y="290" width="180" height="50" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="89.234" y="312.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,624) scale(1,-1)">Enter title / details</text>
+			<path d="M 125,358 L 125,340 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="125 340, 122.3902 345.4027, 127.6098 345.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="35" y="205" width="180" height="50" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="92.735" y="227.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,454) scale(1,-1)">Submit question</text>
+			<path d="M 125,290 L 125,255 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="125 255, 122.3902 260.4027, 127.6098 260.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="285" y="205" width="180" height="50" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="329.48699999999997" y="227.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,454) scale(1,-1)">Validate JSON / CSRF</text>
+			<path d="M 215,230 L 285,230 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="285 230, 279.5973 227.3902, 279.5973 232.6098" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<polygon points="375 172, 450 139.5, 375 107, 300 139.5" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="362.4945" y="139.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,279) scale(1,-1)">Valid?</text>
+			<path d="M 375,205 L 375,172 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="375 172, 372.3902 177.4027, 377.6098 177.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="35" y="112" width="180" height="50" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="86.489" y="134.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,268) scale(1,-1)">Correct input / retry</text>
+			<path d="M 300,139.5 L 215,137 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="215 137, 220.3236 139.7675, 220.4771 134.5502" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="252.388" y="144.25" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,288) scale(1,-1)">No</text>
+			<path d="M 35,137 L 20,137 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 20,137 L 20,315 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 20,315 L 35,315 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="35 315, 29.59732 312.3902, 29.59732 317.6098" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="535" y="113" width="185" height="50" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 543,163 L 543,113 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="587.351" y="135.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,270) scale(1,-1)">Insert thread + state</text>
+			<path d="M 450,139.5 L 535,138 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="535 138, 529.5521 135.4859, 529.6442 140.7047" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="485.608" y="144.75" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,289) scale(1,-1)">Yes</text>
+			<rect x="285" y="30" width="180" height="44" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="330.729" y="49.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,98) scale(1,-1)">Return updated JSON</text>
+			<path d="M 628,113 L 628,52 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 628,52 L 465,52 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="465 52, 470.4027 54.60979, 470.4027 49.39021" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="35" y="30" width="180" height="44" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="86.7365" y="49.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,98) scale(1,-1)">Display new thread</text>
+			<path d="M 285,52 L 215,52 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="215 52, 220.4027 54.60979, 220.4027 49.39021" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<circle cx="125" cy="14" r="7" style="stroke: rgb(9%,16%,30%); stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,16%,30%); fill-rule: evenodd;"/>
+			<circle cx="125" cy="14" r="11" style="stroke: rgb(9%,16%,30%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<path d="M 125,30 L 125,24 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="125 24, 122.3902 29.40268, 127.6098 29.40268" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

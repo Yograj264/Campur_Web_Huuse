@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="20" y="335" width="175" height="55" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="82.993" y="359.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,719) scale(1,-1)">Visit /admin/</text>
+			<polygon points="325 400, 415 362.5, 325 325, 235 362.5" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="302.9905" y="362.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,725) scale(1,-1)">Active staff</text>
+			<text x="307.243" y="350.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,701) scale(1,-1)">session?</text>
+			<path d="M 195,362.5 L 235,362.5 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="235 362.5, 229.5973 359.8902, 229.5973 365.1098" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="235" y="225" width="180" height="55" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="291.241" y="249.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,499) scale(1,-1)">Admin login form</text>
+			<path d="M 325,325 L 325,280 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="325 280, 322.3902 285.4027, 327.6098 285.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="319.888" y="308.5" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,617) scale(1,-1)">No</text>
+			<rect x="235" y="130" width="180" height="55" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="270.98199999999997" y="160.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,321) scale(1,-1)">POST username/password</text>
+			<text x="300.493" y="148.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,297) scale(1,-1)">CSRF token</text>
+			<path d="M 325,225 L 325,185 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="325 185, 322.3902 190.4027, 327.6098 190.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<polygon points="610 197, 715 157, 610 117, 505 157" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="573.109" y="157.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,314) scale(1,-1)">Valid credentials +</text>
+			<text x="575.9845" y="145.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,290) scale(1,-1)">active staff user?</text>
+			<path d="M 415,157.5 L 505,157 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="505 157, 499.5829 154.4203, 499.6119 159.6398" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="505" y="20" width="210" height="55" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="577.24" y="44.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,89) scale(1,-1)">Show login error</text>
+			<path d="M 610,117 L 610,75 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="610 75, 607.3902 80.40268, 612.6098 80.40268" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="604.888" y="102.0" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,204) scale(1,-1)">No</text>
+			<path d="M 505,48 L 455,48 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 455,48 L 455,253 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 455,253 L 415,253 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="415 253, 420.4027 255.6098, 420.4027 250.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="466.0" y="107" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,214) scale(1,-1)">retry</text>
+			<rect x="505" y="318" width="210" height="72" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="564.982" y="363.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,726) scale(1,-1)">Django session cookie</text>
+			<text x="558.358" y="351.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,702) scale(1,-1)">Admin index + permission</text>
+			<text x="560.482" y="339.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,678) scale(1,-1)">checks for model actions</text>
+			<path d="M 415,362.5 L 505,354 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="505 354, 499.3759 351.9098, 499.8666 357.1062" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="453.108" y="364.25" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,728) scale(1,-1)">Yes</text>
+			<path d="M 610,197 L 610,318 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="610 318, 612.6098 312.5973, 607.3902 312.5973" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="603.108" y="263.5" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,527) scale(1,-1)">Yes</text>
+			<text x="99.97" y="37" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,74) scale(1,-1)">Logout invalidates session.</text>
+			<text x="100.81" y="24" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,48) scale(1,-1)">No student signup or JWT.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="5" y="223" width="240" height="175" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 13,398 L 13,223 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="100.1" y="335.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,670) scale(1,-1)">portal_college</text>
+			<text x="89.432" y="324.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,648) scale(1,-1)">PK id: SlugField(50)</text>
+			<text x="86.1" y="313.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,626) scale(1,-1)">name: CharField(200)</text>
+			<text x="82.32" y="302.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,604) scale(1,-1)">location: CharField(100)</text>
+			<text x="80.316" y="291.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,582) scale(1,-1)">annual_fee: Decimal(8,2)</text>
+			<text x="95.656" y="280.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,560) scale(1,-1)">data: JSONField</text>
+			<rect x="260" y="223" width="240" height="175" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 268,398 L 268,223 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="349.1" y="335.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,670) scale(1,-1)">portal_discussion</text>
+			<text x="344.432" y="324.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,648) scale(1,-1)">PK id: SlugField(50)</text>
+			<text x="344.88" y="313.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,626) scale(1,-1)">title: CharField(300)</text>
+			<text x="352.656" y="302.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,604) scale(1,-1)">body: TextField</text>
+			<text x="350.656" y="291.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,582) scale(1,-1)">data: JSONField</text>
+			<text x="312.63599999999997" y="280.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,560) scale(1,-1)">created_at: DateTime(auto_now_add)</text>
+			<rect x="515" y="223" width="240" height="175" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 523,398 L 523,223 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="609.88" y="329.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,659) scale(1,-1)">portal_answer</text>
+			<text x="599.432" y="318.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,637) scale(1,-1)">PK id: SlugField(50)</text>
+			<text x="575.98" y="307.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,615) scale(1,-1)">FK discussion_id -&gt; discussion.id</text>
+			<text x="605.656" y="296.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,593) scale(1,-1)">data: JSONField</text>
+			<text x="567.636" y="285.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,571) scale(1,-1)">created_at: DateTime(auto_now_add)</text>
+			<rect x="80" y="18" width="260" height="145" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 88,163 L 88,18 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="178.656" y="104.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,208) scale(1,-1)">portal_visitorstate</text>
+			<text x="159.54399999999998" y="93.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,186) scale(1,-1)">PK id: BigAutoField (implicit)</text>
+			<text x="154.208" y="82.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,164) scale(1,-1)">UQ session_key: CharField(40)</text>
+			<text x="180.656" y="71.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,142) scale(1,-1)">data: JSONField</text>
+			<rect x="420" y="18" width="260" height="145" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 428,163 L 428,18 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="510.204" y="115.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,230) scale(1,-1)">portal_mentorquestion</text>
+			<text x="499.544" y="104.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,208) scale(1,-1)">PK id: BigAutoField (implicit)</text>
+			<text x="501.32" y="93.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,186) scale(1,-1)">session_key: CharField(40)</text>
+			<text x="486.312" y="82.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,164) scale(1,-1)">mentor: CharField(200), blank=True</text>
+			<text x="516.208" y="71.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,142) scale(1,-1)">question: TextField</text>
+			<text x="482.63599999999997" y="60.333333333333314" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,120) scale(1,-1)">created_at: DateTime(auto_now_add)</text>
+			<path d="M 515,310.5 L 500,310.5 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="500 310.5, 505.4027 313.1098, 505.4027 307.8902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="501.888" y="385" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,770) scale(1,-1)">FK</text>
+			<text x="255.197" y="190" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,380) scale(1,-1)">Fields shown as Django schema types; all 5 application tables.</text>
+		</g>
+	</g>
+</svg>

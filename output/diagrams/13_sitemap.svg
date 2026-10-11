@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="285" y="350" width="190" height="50" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="352.739" y="378.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,756) scale(1,-1)">Django GET /</text>
+			<text x="334.98199999999997" y="366.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,732) scale(1,-1)">React application shell</text>
+			<rect x="15" y="237" width="110" height="45" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="57.9985" y="256.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,513) scale(1,-1)">Home</text>
+			<path d="M 380,350 L 380,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 380,320 L 70,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 70,320 L 70,282 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="70 282, 67.39021 287.4027, 72.60979 287.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="140" y="237" width="110" height="45" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="172.9905" y="256.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,513) scale(1,-1)">Dashboard</text>
+			<path d="M 380,350 L 380,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 380,320 L 195,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 195,320 L 195,282 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="195 282, 192.3902 287.4027, 197.6098 287.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="265" y="237" width="110" height="45" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="303.998" y="256.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,513) scale(1,-1)">Careers</text>
+			<path d="M 380,350 L 380,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 380,320 L 320,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 320,320 L 320,282 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="320 282, 317.3902 287.4027, 322.6098 287.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="390" y="237" width="110" height="45" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="427.495" y="256.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,513) scale(1,-1)">Colleges</text>
+			<path d="M 380,350 L 380,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 380,320 L 445,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 445,320 L 445,282 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="445 282, 442.3902 287.4027, 447.6098 287.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="515" y="237" width="110" height="45" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="547.248" y="256.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,513) scale(1,-1)">Community</text>
+			<path d="M 380,350 L 380,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 380,320 L 570,320 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<path d="M 570,320 L 570,282 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="570 282, 567.3902 287.4027, 572.6098 287.4027" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="515" y="110" width="140" height="55" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="551.241" y="140.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,281) scale(1,-1)">Discussion detail</text>
+			<text x="542.736" y="128.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,257) scale(1,-1)">selectedDiscussionId</text>
+			<path d="M 570,237 L 585,165 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="585 165, 581.3432 169.7568, 586.453 170.8214" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="30" y="72" width="400" height="75" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="198.9905" y="124.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,249) scale(1,-1)">Overlay actions</text>
+			<text x="162.1355" y="112.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,225) scale(1,-1)">Assessment | profile | notifications</text>
+			<text x="153.2165" y="100.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,201) scale(1,-1)">College details | compare | ROI | filters</text>
+			<text x="169.5515" y="88.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,177) scale(1,-1)">Ask question | mentor connect</text>
+			<rect x="630" y="227" width="120" height="55" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="675.2445" y="257.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,515) scale(1,-1)">/admin/</text>
+			<text x="660.2325" y="245.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,491) scale(1,-1)">Separate route</text>
+			<text x="226.31" y="30" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,60) scale(1,-1)">Screen names are React states, not independent Django page URLs.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="175.25149999999996" y="390" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,780) scale(1,-1)">PROPOSED 6-WEEK EXTENSION PLAN - NOT HISTORICAL DELIVERY DATES</text>
+			<text x="321.993" y="359" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Week 1</text>
+			<text x="386.993" y="359" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Week 2</text>
+			<text x="451.993" y="359" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Week 3</text>
+			<text x="516.993" y="359" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Week 4</text>
+			<text x="581.993" y="359" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Week 5</text>
+			<text x="646.993" y="359" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,718) scale(1,-1)">Week 6</text>
+			<text x="12" y="321" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,642) scale(1,-1)">Requirements + review fixes</text>
+			<rect x="305" y="310" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="370" y="310" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="435" y="310" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="500" y="310" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="565" y="310" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="630" y="310" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="309" y="314" width="57" height="22" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,14%,80%); fill-rule: evenodd;"/>
+			<text x="12" y="274" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,548) scale(1,-1)">Auth + data normalization</text>
+			<rect x="305" y="263" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="370" y="263" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="435" y="263" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="500" y="263" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="565" y="263" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="630" y="263" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="309" y="267" width="122" height="22" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="12" y="227" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,454) scale(1,-1)">Backend validation + moderation</text>
+			<rect x="305" y="216" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="370" y="216" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="435" y="216" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="500" y="216" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="565" y="216" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="630" y="216" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="374" y="220" width="122" height="22" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,14%,80%); fill-rule: evenodd;"/>
+			<text x="12" y="180" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,360) scale(1,-1)">UI integration + notifications</text>
+			<rect x="305" y="169" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="370" y="169" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="435" y="169" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="500" y="169" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="565" y="169" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="630" y="169" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="439" y="173" width="122" height="22" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="12" y="133" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,266) scale(1,-1)">Tests + concurrency checks</text>
+			<rect x="305" y="122" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="370" y="122" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="435" y="122" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="500" y="122" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="565" y="122" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="630" y="122" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="504" y="126" width="122" height="22" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(20%,14%,80%); fill-rule: evenodd;"/>
+			<text x="12" y="86" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,172) scale(1,-1)">Deployment + documentation</text>
+			<rect x="305" y="75" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="370" y="75" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="435" y="75" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="500" y="75" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="565" y="75" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="630" y="75" width="65" height="30" style="stroke: rgb(86%,88%,92%); stroke-linecap: butt; stroke-width: 0.5; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="569" y="79" width="122" height="22" rx="4" ry="4" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,54%); fill-rule: evenodd;"/>
+			<text x="200.745" y="22" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,44) scale(1,-1)">Sequence is a proposal; duration and resources must be agreed with the mentor.</text>
+		</g>
+	</g>
+</svg>

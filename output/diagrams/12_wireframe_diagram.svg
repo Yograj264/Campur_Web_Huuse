@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="12" y="13" width="230" height="385" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd; stroke-dasharray: 5, 3;"/>
+			<text x="22" y="381" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,762) scale(1,-1)">Home / discover</text>
+			<rect x="22" y="331" width="210" height="35" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="75.344" y="345.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,691) scale(1,-1)">Header | notifications | profile</text>
+			<rect x="22" y="30" width="210" height="32" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="62.30680000000001" y="43.80000000000001" style="font-family: Helvetica; font-size: 6.6px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,87) scale(1,-1)">Home | dashboard | careers | colleges | feed</text>
+			<rect x="265" y="13" width="230" height="385" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd; stroke-dasharray: 5, 3;"/>
+			<text x="275" y="381" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,762) scale(1,-1)">College catalogue</text>
+			<rect x="275" y="331" width="210" height="35" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="328.344" y="345.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,691) scale(1,-1)">Header | notifications | profile</text>
+			<rect x="275" y="30" width="210" height="32" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="315.3068" y="43.80000000000001" style="font-family: Helvetica; font-size: 6.6px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,87) scale(1,-1)">Home | dashboard | careers | colleges | feed</text>
+			<rect x="518" y="13" width="230" height="385" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd; stroke-dasharray: 5, 3;"/>
+			<text x="528" y="381" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,762) scale(1,-1)">Community</text>
+			<rect x="528" y="331" width="210" height="35" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="581.344" y="345.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,691) scale(1,-1)">Header | notifications | profile</text>
+			<rect x="528" y="30" width="210" height="32" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="568.3068000000001" y="43.80000000000001" style="font-family: Helvetica; font-size: 6.6px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,87) scale(1,-1)">Home | dashboard | careers | colleges | feed</text>
+			<rect x="22" y="249" width="210" height="65" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="92.737" y="284.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,569) scale(1,-1)">Hero introduction</text>
+			<text x="73.981" y="272.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,545) scale(1,-1)">Career-assessment button</text>
+			<rect x="22" y="162" width="210" height="65" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="81.2305" y="191.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,383) scale(1,-1)">Featured college cards</text>
+			<rect x="22" y="86" width="210" height="55" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="77.47749999999999" y="110.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,221) scale(1,-1)">Career / learning content</text>
+			<rect x="275" y="276" width="210" height="38" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="338.8565" y="292.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,584) scale(1,-1)">Search input + filters</text>
+			<rect x="275" y="231" width="210" height="30" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="338.735" y="243.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,486) scale(1,-1)">Category chips / sort</text>
+			<rect x="275" y="139" width="210" height="76" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="352.4915" y="180.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,360) scale(1,-1)">College cards</text>
+			<text x="331.895" y="168.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,336) scale(1,-1)">Details | save | compare</text>
+			<rect x="275" y="82" width="210" height="38" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="330.734" y="98.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,196) scale(1,-1)">Compare selection / ROI</text>
+			<rect x="528" y="276" width="210" height="38" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="581.349" y="292.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,584) scale(1,-1)">Ask question + categories</text>
+			<rect x="528" y="160" width="210" height="95" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="611.994" y="210.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,421) scale(1,-1)">Thread list</text>
+			<text x="586.389" y="198.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,397) scale(1,-1)">Open | vote | bookmark</text>
+			<rect x="528" y="82" width="210" height="51" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="600.987" y="110.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,221) scale(1,-1)">Mentor spotlight</text>
+			<text x="599.988" y="98.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,197) scale(1,-1)">Question drawer</text>
+		</g>
+	</g>
+</svg>

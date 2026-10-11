@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="15" y="230" width="230" height="150" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="88.208" y="340.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,681) scale(1,-1)">College : models.Model</text>
+			<text x="98.032" y="329.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,659) scale(1,-1)">------------------------</text>
+			<text x="99.32" y="318.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,637) scale(1,-1)">id: SlugField [PK]</text>
+			<text x="84.428" y="307.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,615) scale(1,-1)">name, location: CharField</text>
+			<text x="84.872" y="296.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,593) scale(1,-1)">annual_fee: DecimalField</text>
+			<text x="100.656" y="285.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,571) scale(1,-1)">data: JSONField</text>
+			<text x="98.032" y="274.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,549) scale(1,-1)">------------------------</text>
+			<text x="101.768" y="263.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,527) scale(1,-1)">__str__(): name</text>
+			<rect x="265" y="230" width="230" height="150" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="332.432" y="335.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,670) scale(1,-1)">Discussion : models.Model</text>
+			<text x="348.032" y="324.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,648) scale(1,-1)">------------------------</text>
+			<text x="349.32" y="313.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,626) scale(1,-1)">id: SlugField [PK]</text>
+			<text x="324.648" y="302.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,604) scale(1,-1)">title: CharField; body: TextField</text>
+			<text x="350.656" y="291.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,582) scale(1,-1)">data: JSONField</text>
+			<text x="332.872" y="280.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,560) scale(1,-1)">created_at: DateTimeField</text>
+			<text x="355.548" y="269.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,538) scale(1,-1)">__str__(): title</text>
+			<rect x="515" y="230" width="230" height="150" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="588.432" y="340.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,681) scale(1,-1)">Answer : models.Model</text>
+			<text x="598.032" y="329.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,659) scale(1,-1)">------------------------</text>
+			<text x="599.32" y="318.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,637) scale(1,-1)">id: SlugField [PK]</text>
+			<text x="588.652" y="307.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,615) scale(1,-1)">discussion: ForeignKey</text>
+			<text x="600.656" y="296.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,593) scale(1,-1)">data: JSONField</text>
+			<text x="582.872" y="285.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,571) scale(1,-1)">created_at: DateTimeField</text>
+			<text x="598.032" y="274.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,549) scale(1,-1)">------------------------</text>
+			<text x="587.54" y="263.8333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,527) scale(1,-1)">Inherited ORM methods</text>
+			<rect x="80" y="40" width="260" height="115" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="161.316" y="116.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,233) scale(1,-1)">VisitorState : models.Model</text>
+			<text x="175.368" y="105.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,211) scale(1,-1)">--------------------------</text>
+			<text x="159.984" y="94.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,189) scale(1,-1)">id: BigAutoField [implicit PK]</text>
+			<text x="153.088" y="83.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,167) scale(1,-1)">session_key: CharField [unique]</text>
+			<text x="180.656" y="72.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,145) scale(1,-1)">data: JSONField</text>
+			<rect x="420" y="40" width="260" height="115" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="493.312" y="116.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,233) scale(1,-1)">MentorQuestion : models.Model</text>
+			<text x="515.368" y="105.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,211) scale(1,-1)">--------------------------</text>
+			<text x="499.984" y="94.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,189) scale(1,-1)">id: BigAutoField [implicit PK]</text>
+			<text x="493.76" y="83.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,167) scale(1,-1)">session_key, mentor: CharField</text>
+			<text x="495.084" y="72.83333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,145) scale(1,-1)">question: TextField; created_at</text>
+			<path d="M 495,305 L 515,305 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="515 305, 509.5973 302.3902, 509.5973 307.6098" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="487.104" y="390" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,780) scale(1,-1)">1 -&gt; many</text>
+			<text x="248.56" y="190" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,380) scale(1,-1)">All classes inherit save(), delete() and the objects manager.</text>
+		</g>
+	</g>
+</svg>

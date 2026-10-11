@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="45" y="275" width="230" height="100" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 53,375 L 53,275 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="138.24699999999999" y="340.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,680) scale(1,-1)">Discussion</text>
+			<text x="136.744" y="328.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,656) scale(1,-1)">PK id (slug)</text>
+			<text x="129.481" y="316.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,632) scale(1,-1)">title, body, data</text>
+			<text x="138.7375" y="304.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,608) scale(1,-1)">created_at</text>
+			<rect x="460" y="275" width="245" height="100" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 468,375 L 468,275 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="567.497" y="340.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,680) scale(1,-1)">Answer</text>
+			<text x="559.244" y="328.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,656) scale(1,-1)">PK id (slug)</text>
+			<text x="548.489" y="316.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,632) scale(1,-1)">FK discussion_id</text>
+			<text x="549.9784999999999" y="304.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,608) scale(1,-1)">data, created_at</text>
+			<path d="M 275,325 L 460,325 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="460 325, 454.5973 322.3902, 454.5973 327.6098" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="333.696" y="331.0" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,662) scale(1,-1)">1                       0..*</text>
+			<text x="303.473" y="260" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,520) scale(1,-1)">CASCADE when discussion is deleted</text>
+			<rect x="45" y="100" width="230" height="100" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 53,200 L 53,100 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="144.745" y="165.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,330) scale(1,-1)">College</text>
+			<text x="136.744" y="153.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,306) scale(1,-1)">PK id (slug)</text>
+			<text x="130.7365" y="141.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,282) scale(1,-1)">name, location</text>
+			<text x="126.475" y="129.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,258) scale(1,-1)">annual_fee, data</text>
+			<rect x="350" y="95" width="175" height="110" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 358,205 L 358,95 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="414.4915" y="165.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,330) scale(1,-1)">VisitorState</text>
+			<text x="413.74" y="153.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,306) scale(1,-1)">PK id (auto)</text>
+			<text x="404.74" y="141.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,282) scale(1,-1)">UQ session_key</text>
+			<text x="428.743" y="129.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,258) scale(1,-1)">data</text>
+			<rect x="570" y="95" width="175" height="110" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 578,205 L 578,95 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="625.487" y="165.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,330) scale(1,-1)">MentorQuestion</text>
+			<text x="633.74" y="153.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,306) scale(1,-1)">PK id (auto)</text>
+			<text x="616.235" y="141.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,282) scale(1,-1)">session_key, mentor</text>
+			<text x="616.7255" y="129.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,258) scale(1,-1)">question, created_at</text>
+			<text x="341.065" y="46" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,92) scale(1,-1)">Session keys are logical text links, not foreign keys.</text>
+		</g>
+	</g>
+</svg>

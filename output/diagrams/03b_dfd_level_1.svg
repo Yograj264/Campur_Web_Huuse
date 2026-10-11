@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="8" y="344" width="110" height="44" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="47.4885" y="363.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,726) scale(1,-1)">Student</text>
+			<ellipse cx="382.5" cy="366.5" rx="102.5" ry="27.5" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="354.483" y="363.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,727) scale(1,-1)">1.0 Catalogue</text>
+			<rect x="605" y="344" width="150" height="44" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 613,388 L 613,344 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="660.216" y="363.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,726) scale(1,-1)">D1 College</text>
+			<path d="M 118,366 L 280,366.5 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="280 366.5, 274.6054 363.8735, 274.5893 369.0931" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="162.204" y="376" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,752) scale(1,-1)">queries / catalogue</text>
+			<path d="M 485,366.5 L 605,366 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="605 366, 599.5865 363.4127, 599.6082 368.6323" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="517.54" y="376" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,752) scale(1,-1)">catalogue query</text>
+			<path d="M 605,354 L 485,354 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="485 354, 490.4027 356.6098, 490.4027 351.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="518.88" y="339" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,678) scale(1,-1)">college records</text>
+			<path d="M 280,354 L 118,354 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="118 354, 123.4027 356.6098, 123.4027 351.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="8" y="280" width="110" height="44" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="47.4885" y="299.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,598) scale(1,-1)">Student</text>
+			<ellipse cx="382.5" cy="302.5" rx="102.5" ry="27.5" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="352.242" y="299.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,599) scale(1,-1)">2.0 Community</text>
+			<rect x="605" y="280" width="150" height="44" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 613,324 L 613,280 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="636.544" y="299.3333333333333" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,598) scale(1,-1)">D2 Discussion + Answer</text>
+			<path d="M 118,302 L 280,302.5 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="280 302.5, 274.6054 299.8735, 274.5893 305.0931" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="155.316" y="312" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,624) scale(1,-1)">posts / answers / votes</text>
+			<path d="M 485,302.5 L 605,302 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="605 302, 599.5865 299.4127, 599.6082 304.6323" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="509.536" y="312" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,624) scale(1,-1)">thread / answer data</text>
+			<path d="M 605,290 L 485,290 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="485 290, 490.4027 292.6098, 490.4027 287.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="503.984" y="275" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,550) scale(1,-1)">thread / answer records</text>
+			<path d="M 280,290 L 118,290 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="118 290, 123.4027 292.6098, 123.4027 287.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="8" y="216" width="110" height="44" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="47.4885" y="235.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,470) scale(1,-1)">Student</text>
+			<ellipse cx="382.5" cy="238.5" rx="102.5" ry="27.5" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="350.7345" y="235.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,471) scale(1,-1)">3.0 Preferences</text>
+			<rect x="605" y="216" width="150" height="44" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 613,260 L 613,216 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="653.324" y="235.33333333333334" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,470) scale(1,-1)">D3 VisitorState</text>
+			<path d="M 118,238 L 280,238.5 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="280 238.5, 274.6054 235.8735, 274.5893 241.0931" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="153.096" y="248" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,496) scale(1,-1)">save / remind / progress</text>
+			<path d="M 485,238.5 L 605,238 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="605 238, 599.5865 235.4127, 599.6082 240.6323" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="517.32" y="248" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,496) scale(1,-1)">preference flags</text>
+			<path d="M 605,226 L 485,226 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="485 226, 490.4027 228.6098, 490.4027 223.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="525.544" y="211" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,422) scale(1,-1)">saved state</text>
+			<path d="M 280,226 L 118,226 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="118 226, 123.4027 228.6098, 123.4027 223.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="8" y="152" width="110" height="44" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="47.4885" y="171.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,342) scale(1,-1)">Student</text>
+			<ellipse cx="382.5" cy="174.5" rx="102.5" ry="27.5" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="347.733" y="171.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,343) scale(1,-1)">4.0 Mentor intake</text>
+			<rect x="605" y="152" width="150" height="44" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 613,196 L 613,152 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="645.32" y="171.33333333333334" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,342) scale(1,-1)">D4 MentorQuestion</text>
+			<path d="M 118,174 L 280,174.5 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="280 174.5, 274.6054 171.8735, 274.5893 177.0931" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="165.54" y="184" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,368) scale(1,-1)">question / receipt</text>
+			<path d="M 485,174.5 L 605,174 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="605 174, 599.5865 171.4127, 599.6082 176.6323" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="517.32" y="184" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,368) scale(1,-1)">mentor question</text>
+			<path d="M 605,162 L 485,162 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="485 162, 490.4027 164.6098, 490.4027 159.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="525.1" y="147" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,294) scale(1,-1)">receipt data</text>
+			<path d="M 280,162 L 118,162 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="118 162, 123.4027 164.6098, 123.4027 159.3902" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="8" y="88" width="110" height="44" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="36.495000000000005" y="107.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,214) scale(1,-1)">Administrator</text>
+			<ellipse cx="382.5" cy="110.5" rx="102.5" ry="27.5" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="346.4865" y="107.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,215) scale(1,-1)">5.0 Administration</text>
+			<rect x="605" y="88" width="150" height="44" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 613,132 L 613,88 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="635.98" y="107.33333333333331" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,214) scale(1,-1)">D1-D4 + auth + sessions</text>
+			<path d="M 118,110 L 280,110.5 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="280 110.5, 274.6054 107.8735, 274.5893 113.0931" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="149.76" y="120" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,240) scale(1,-1)">credentials / edits / results</text>
+			<path d="M 485,110.5 L 605,110 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="605 110, 599.5865 107.4127, 599.6082 112.6323" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="514.876" y="120" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,240) scale(1,-1)">edits / credentials</text>
+			<path d="M 605,98 L 485,98 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="485 98, 490.4027 100.6098, 490.4027 95.39021" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="510.652" y="83" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,166) scale(1,-1)">records / auth result</text>
+			<path d="M 280,98 L 118,98 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="118 98, 123.4027 100.6098, 123.4027 95.39021" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="8" y="24" width="110" height="44" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="41.994" y="43.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,86) scale(1,-1)">Maintainer</text>
+			<ellipse cx="382.5" cy="46.5" rx="102.5" ry="27.5" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="350.7345" y="43.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,87) scale(1,-1)">6.0 Seed import</text>
+			<rect x="605" y="24" width="150" height="44" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 613,68 L 613,24 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="668.444" y="43.333333333333314" style="font-family: Helvetica; font-size: 8px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,86) scale(1,-1)">D1-D2</text>
+			<path d="M 118,46 L 280,46.5 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="280 46.5, 274.6054 43.87354, 274.5893 49.09311" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="152.2" y="56" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,112) scale(1,-1)">seed data / import status</text>
+			<path d="M 485,46.5 L 605,46 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="605 46, 599.5865 43.41274, 599.6082 48.63228" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="518.66" y="56" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,112) scale(1,-1)">sample records</text>
+			<path d="M 605,34 L 485,34 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="485 34, 490.4027 36.60979, 490.4027 31.39021" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="521.996" y="19" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,38) scale(1,-1)">import results</text>
+			<path d="M 280,34 L 118,34 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="118 34, 123.4027 36.60979, 123.4027 31.39021" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

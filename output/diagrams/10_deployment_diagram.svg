@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="760" height="410" preserveAspectRatio="xMinYMin meet" viewBox="0 0 760 410" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="760" height="410"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-410)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="20" y="30" width="720" height="360" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd; stroke-dasharray: 5, 3;"/>
+			<text x="30" y="373" style="font-family: Helvetica-Bold; font-size: 9px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,746) scale(1,-1)">Current deployment: developer Windows computer</text>
+			<rect x="45" y="230" width="185" height="90" rx="6" ry="6" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,97%); fill-rule: evenodd;"/>
+			<text x="116.485" y="284.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,568) scale(1,-1)">&lt;&lt;client&gt;&gt;</text>
+			<text x="120.9985" y="272.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,544) scale(1,-1)">Browser</text>
+			<text x="107.2375" y="260.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,520) scale(1,-1)">React interface</text>
+			<rect x="315" y="230" width="190" height="90" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="354.218" y="284.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,568) scale(1,-1)">&lt;&lt;execution environment&gt;&gt;</text>
+			<text x="356.729" y="272.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,544) scale(1,-1)">Python virtual environment</text>
+			<text x="354.9785" y="260.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,520) scale(1,-1)">Django development server</text>
+			<rect x="575" y="230" width="140" height="90" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 583,320 L 583,230 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="620.9835" y="278.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,556) scale(1,-1)">&lt;&lt;artifact&gt;&gt;</text>
+			<text x="625.74" y="266.0" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,532) scale(1,-1)">db.sqlite3</text>
+			<path d="M 230,275 L 315,275 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="315 275, 309.5973 272.3902, 309.5973 277.6098" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="244.436" y="295" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,590) scale(1,-1)">loopback HTTP</text>
+			<text x="245.312" y="284" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,568) scale(1,-1)">127.0.0.1:8000</text>
+			<path d="M 505,275 L 575,275 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="575 275, 569.5973 272.3902, 569.5973 277.6098" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="525.552" y="281.0" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,562) scale(1,-1)">local file</text>
+			<rect x="315" y="75" width="255" height="75" rx="6" ry="6" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,96%,96%); fill-rule: evenodd;"/>
+			<path d="M 323,150 L 323,75 Z" style="stroke: rgb(3%,49%,54%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="416.2335" y="121.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,243) scale(1,-1)">&lt;&lt;artifacts&gt;&gt;</text>
+			<text x="401.235" y="109.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,219) scale(1,-1)">templates/index.html</text>
+			<text x="398.7285" y="97.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,195) scale(1,-1)">static/frontend/assets/</text>
+			<path d="M 442.5,150 L 410,230 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="410 230, 414.4513 225.9769, 409.6156 224.0123" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<rect x="45" y="75" width="185" height="75" rx="6" ry="6" style="stroke: rgb(20%,14%,80%); stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,95%,98%); fill-rule: evenodd;"/>
+			<text x="91.474" y="115.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,231) scale(1,-1)">&lt;&lt;build environment&gt;&gt;</text>
+			<text x="109.3615" y="103.5" style="font-family: Helvetica; font-size: 9px;fill: rgb(9%,16%,30%); stroke:none;" transform="translate(0,207) scale(1,-1)">Node.js + Vite</text>
+			<path d="M 230,112.5 L 315,112.5 Z" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 0.9;"/>
+			<polygon points="315 112.5, 309.5973 109.8902, 309.5973 115.1098" style="stroke: rgb(38%,43%,52%); stroke-linecap: butt; stroke-width: 1; fill: rgb(38%,43%,52%); fill-rule: evenodd;"/>
+			<text x="248.268" y="118.5" style="font-family: Helvetica; font-size: 8px;fill: rgb(38%,43%,52%); stroke:none;" transform="translate(0,237) scale(1,-1)">npm run build</text>
+		</g>
+	</g>
+</svg>
