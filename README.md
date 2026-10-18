@@ -83,3 +83,15 @@ The integration follows Django's [static files guidance](https://docs.djangoproj
 ## JavaScript source
 
 React components now use `.jsx`; API and data modules use `.js`. The Vite configuration is `vite.config.js`. `npm run lint` checks JavaScript/JSX syntax and resolves the web application imports using esbuild; it is not a TypeScript or ESLint run. The unfinished Expo starter in `mobile/` also uses JavaScript and has not been converted into the full mobile application. Existing PDF review documents are historical snapshots and may still mention TypeScript.
+
+## Render deployment
+
+Create a Python web service with the root directory containing manage.py. Set Build Command to `bash build.sh` and Start Command to `gunicorn campus_project.wsgi:application --bind 0.0.0.0:$PORT`.
+
+Set `DJANGO_DEBUG=0`, a generated `DJANGO_SECRET_KEY`, and `DJANGO_ALLOWED_HOSTS=campus-web-house.onrender.com` (or your actual hostname). Render's `RENDER_EXTERNAL_HOSTNAME` is also accepted automatically. Do not put a scheme or path in allowed hosts.
+
+The build installs Python/Node dependencies, builds the React UI, collects static files, applies migrations, and imports missing demo records. WhiteNoise serves the collected JavaScript and CSS with DEBUG disabled. Vite already provides hashed filenames; compressed static storage preserves those paths.
+
+This version still uses SQLite. Its file on an ordinary Render ephemeral filesystem is not durable across deployments/replacement instances. Use a properly configured persistent database before retaining real submissions. Setting DATABASE_URL alone does not configure this project's database. The build's seed command initializes demo content, not a backup of existing user data.
+
+After pushing these changes and redeploying, check `/`, the script/CSS paths in its HTML, and `/api/bootstrap/`. If the API still returns 500, inspect Render's runtime logs for the traceback instead of enabling public DEBUG pages.

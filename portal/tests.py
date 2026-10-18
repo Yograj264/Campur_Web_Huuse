@@ -64,3 +64,36 @@ class PortalTests(TestCase):
         count = College.objects.count()
         call_command('seed_demo',verbosity=0)
         self.assertEqual(College.objects.count(),count)
+
+
+class ProductionAssetsTests(TestCase):
+    """Check the actual Vite asset URLs with DEBUG disabled, as on Render."""
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        from tempfile import TemporaryDirectory
+        from django.test import override_settings
+        cls.directory = TemporaryDirectory()
+        cls.production = override_settings(DEBUG=False, STATIC_ROOT=cls.directory.name)
+        cls.production.enable()
+        call_command('collectstatic', interactive=False, verbosity=0, post_process=False)
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.production.disable()
+        cls.directory.cleanup()
+        super().tearDownClass()
+
+    def test_built_assets_load_in_production(self):
+        import re
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 200)
+        urls = re.findall(r'/static/frontend/assets/[^" ]+', response.content.decode())
+        self.assertTrue(any(url.endswith('.js') for url in urls))
+        self.assertTrue(any(url.endswith('.css') for url in urls))
+        for url in urls:
+            with self.subTest(url=url):
+                asset = self.client.get(url)
+                self.assertEqual(asset.status_code, 200)
+                self.assertNotIn('text/html', asset['Content-Type'])
+                asset.close()
