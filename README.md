@@ -1,6 +1,6 @@
 # Campus Web House — Django project
 
-Campus is now served by Python Django 5.2, with SQLite persistence and Django admin. The existing React/TypeScript UI is retained to preserve all screens, styling, mobile navigation, modals, comparison tools, and ROI calculator. This is a Django backend with a React frontend, rather than a rewrite into server-rendered pages.
+Campus is now served by Python Django 5.2, with SQLite persistence and Django admin. The existing React/JavaScript UI is retained to preserve all screens, styling, mobile navigation, modals, comparison tools, and ROI calculator. This is a Django backend with a React frontend, rather than a rewrite into server-rendered pages.
 
 ## Start the prepared project on this computer
 
@@ -64,7 +64,7 @@ npm run build
 
 `npm run clean` removes the generated `dist/` build and Python bytecode caches within the Django source folders. It preserves the database, virtual environment, dependencies, and Django's current frontend assets. `npm run build` replaces those frontend assets with the latest build, so old hashed JavaScript and CSS files do not accumulate.
 
-The unused Vite starter screens, images, duplicate configuration, AI Studio metadata, and unused Node packages have been removed. React and React DOM remain runtime dependencies; build and type-checking tools are development dependencies.
+The unused Vite starter screens, images, duplicate configuration, AI Studio metadata, and unused Node packages have been removed. React and React DOM remain runtime dependencies; build and JavaScript-checking tools are development dependencies.
 
 ## Layout
 
@@ -79,3 +79,7 @@ The unused Vite starter screens, images, duplicate configuration, AI Studio meta
 Set `DJANGO_DEBUG=0`, a strong `DJANGO_SECRET_KEY`, and `DJANGO_ALLOWED_HOSTS` in the process environment. `.env.example` documents the variables but is not loaded automatically. Run `manage.py collectstatic`, serve `staticfiles/` through a web server, and use a production WSGI/ASGI server with HTTPS. Production cookies require HTTPS. External fonts and original remote images need internet access.
 
 The integration follows Django's [static files guidance](https://docs.djangoproject.com/en/5.2/howto/static-files/) and [CSRF guidance](https://docs.djangoproject.com/en/5.2/howto/csrf/).
+
+## JavaScript source
+
+React components now use `.jsx`; API and data modules use `.js`. The Vite configuration is `vite.config.js`. `npm run lint` checks JavaScript/JSX syntax and resolves the web application imports using esbuild; it is not a TypeScript or ESLint run. The unfinished Expo starter in `mobile/` also uses JavaScript and has not been converted into the full mobile application. Existing PDF review documents are historical snapshots and may still mention TypeScript.

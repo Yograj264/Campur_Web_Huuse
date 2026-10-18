@@ -1,6 +1,6 @@
 import fs from 'node:fs';
-import { transformSync } from 'esbuild';
-const source = fs.readFileSync('src/data/mockData.ts', 'utf8');
-const {code} = transformSync(source, {loader:'ts',format:'esm'});
-const data = await import('data:text/javascript;base64,' + Buffer.from(code).toString('base64'));
+import { INITIAL_COLLEGES, INITIAL_DISCUSSIONS, DISCUSSION_1_ANSWERS, FEATURED_CAREERS, FULL_STACK_MILESTONES, SPOTLIGHT_MENTORS, CRITICAL_DEADLINES, RECENT_RESOURCES } from '../src/data/mockData.js';
+
+const data = { INITIAL_COLLEGES, INITIAL_DISCUSSIONS, DISCUSSION_1_ANSWERS, FEATURED_CAREERS, FULL_STACK_MILESTONES, SPOTLIGHT_MENTORS, CRITICAL_DEADLINES, RECENT_RESOURCES };
 fs.writeFileSync('portal/demo_data.json', JSON.stringify(data,null,2));
+console.log('Sample JavaScript data exported.');

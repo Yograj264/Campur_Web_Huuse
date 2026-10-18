@@ -1,21 +1,4 @@
-import React from 'react';
-import { ScreenType, College, DeadlineItem } from '../types';
-
-interface DashboardScreenProps {
-  onNavigate: (screen: ScreenType) => void;
-  onOpenAssessment: () => void;
-  onOpenProfile: () => void;
-  onOpenCompare: () => void;
-  onSelectCollege: (college: College) => void;
-  onOpenDiscussion: (discussionId: string) => void;
-  onTriggerToast: (msg: string) => void;
-  colleges: College[];
-  profileScore: number;
-  deadlines: DeadlineItem[];
-  onToggleDeadlineReminder: (id: string) => void;
-}
-
-export const DashboardScreen: React.FC<DashboardScreenProps> = ({
+const DashboardScreen = ({
   onNavigate,
   onOpenAssessment,
   onOpenProfile,
@@ -28,24 +11,26 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
   deadlines,
   onToggleDeadlineReminder
 }) => {
-  const savedColleges = colleges.filter((c) =>
-    ['iit-delhi', 'iiit-hyderabad', 'dtu-delhi'].includes(c.id)
+  const savedColleges = colleges.filter(
+    (c) => ["iit-delhi", "iiit-hyderabad", "dtu-delhi"].includes(c.id)
   );
-
-  return (
-    <div className="flex flex-col w-full pb-20 max-w-4xl mx-auto px-4 sm:px-6">
-      {/* Top Greeting & Profile Health Banner */}
+  return <div className="flex flex-col w-full pb-20 max-w-4xl mx-auto px-4 sm:px-6">
+      {
+    /* Top Greeting & Profile Health Banner */
+  }
       <section className="pt-2 pb-4">
         <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary via-primary-container to-tertiary p-5 sm:p-6 text-on-primary shadow-md">
-          {/* Decorative Backdrop Geometry */}
-          <div className="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
-          <div className="absolute top-0 right-12 w-28 h-28 rounded-full bg-secondary-container/20 blur-xl pointer-events-none"></div>
+          {
+    /* Decorative Backdrop Geometry */
+  }
+          <div className="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-white/10 blur-2xl pointer-events-none" />
+          <div className="absolute top-0 right-12 w-28 h-28 rounded-full bg-secondary-container/20 blur-xl pointer-events-none" />
 
           <div className="relative z-10 flex flex-col gap-3">
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/15 backdrop-blur-md text-on-primary text-xs font-semibold tracking-wide">
-                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse" />
                   B.Tech CSE • 3rd Year (CGPA 8.4)
                 </span>
                 <h1 className="font-display font-bold text-xl sm:text-2xl tracking-tight mt-1 truncate">
@@ -53,28 +38,30 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
                 </h1>
               </div>
 
-              {/* Radial Gauge */}
+              {
+    /* Radial Gauge */
+  }
               <div className="relative flex items-center justify-center shrink-0">
                 <svg className="w-14 h-14 transform -rotate-90" viewBox="0 0 48 48">
                   <circle
-                    className="text-white/20 fill-none"
-                    cx="24"
-                    cy="24"
-                    r="20"
-                    stroke="currentColor"
-                    strokeWidth="3.5"
-                  />
+    className="text-white/20 fill-none"
+    cx="24"
+    cy="24"
+    r="20"
+    stroke="currentColor"
+    strokeWidth="3.5"
+  />
                   <circle
-                    className="text-secondary-fixed fill-none transition-all duration-1000 ease-out"
-                    cx="24"
-                    cy="24"
-                    r="20"
-                    stroke="currentColor"
-                    strokeDasharray="125.6"
-                    strokeDashoffset={125.6 - (125.6 * profileScore) / 100}
-                    strokeLinecap="round"
-                    strokeWidth="3.5"
-                  />
+    className="text-secondary-fixed fill-none transition-all duration-1000 ease-out"
+    cx="24"
+    cy="24"
+    r="20"
+    stroke="currentColor"
+    strokeDasharray="125.6"
+    strokeDashoffset={125.6 - 125.6 * profileScore / 100}
+    strokeLinecap="round"
+    strokeWidth="3.5"
+  />
                 </svg>
                 <div className="absolute flex flex-col items-center justify-center">
                   <span className="font-display font-extrabold text-sm sm:text-base leading-none text-on-primary">
@@ -84,25 +71,27 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
               </div>
             </div>
 
-            {/* Completion Nudge Prompt */}
+            {
+    /* Completion Nudge Prompt */
+  }
             <div className="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-surface-container-lowest/15 backdrop-blur-md">
               <div className="flex items-center gap-2 min-w-0">
                 <span
-                  className="material-symbols-outlined text-[18px] text-secondary-fixed shrink-0"
-                  style={{ fontVariationSettings: "'FILL' 1" }}
-                >
+    className="material-symbols-outlined text-[18px] text-secondary-fixed shrink-0"
+    style={{ fontVariationSettings: "'FILL' 1" }}
+  >
                   stars
                 </span>
                 <p className="text-xs text-on-primary/95 truncate">
-                  Add capstone graduation project to hit{' '}
+                  Add capstone graduation project to hit{" "}
                   <span className="font-bold text-secondary-fixed">100% profile score</span>
                 </p>
               </div>
               <button
-                onClick={onOpenProfile}
-                aria-label="Add project"
-                className="shrink-0 px-3 py-1 rounded-lg bg-surface-container-lowest text-primary text-xs font-bold shadow-xs active:scale-95 transition-transform"
-              >
+    onClick={onOpenProfile}
+    aria-label="Add project"
+    className="shrink-0 px-3 py-1 rounded-lg bg-surface-container-lowest text-primary text-xs font-bold shadow-xs active:scale-95 transition-transform"
+  >
                 Add
               </button>
             </div>
@@ -110,51 +99,57 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
         </div>
       </section>
 
-      {/* Horizontal Quick Action Pills */}
+      {
+    /* Horizontal Quick Action Pills */
+  }
       <section className="pb-4">
         <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
           <button
-            onClick={() => onNavigate('careers-roadmap')}
-            className="shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary text-on-primary text-xs font-semibold shadow-xs active:scale-95 transition-transform"
-          >
+    onClick={() => onNavigate("careers-roadmap")}
+    className="shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary text-on-primary text-xs font-semibold shadow-xs active:scale-95 transition-transform"
+  >
             <span
-              className="material-symbols-outlined text-[18px]"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
+    className="material-symbols-outlined text-[18px]"
+    style={{ fontVariationSettings: "'FILL' 1" }}
+  >
               play_circle
             </span>
             <span>Resume Roadmap</span>
           </button>
 
           <button
-            onClick={() => onTriggerToast('Viewing 3 critical deadlines for your batch')}
-            className="shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface text-xs font-semibold shadow-xs active:scale-95 transition-transform border border-surface-container"
-          >
+    onClick={() => onTriggerToast("Viewing 3 critical deadlines for your batch")}
+    className="shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface text-xs font-semibold shadow-xs active:scale-95 transition-transform border border-surface-container"
+  >
             <span className="material-symbols-outlined text-[18px] text-error">event_upcoming</span>
             <span>Upcoming Deadlines</span>
           </button>
 
           <button
-            onClick={onOpenAssessment}
-            className="shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface text-xs font-semibold shadow-xs active:scale-95 transition-transform border border-surface-container"
-          >
+    onClick={onOpenAssessment}
+    className="shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface text-xs font-semibold shadow-xs active:scale-95 transition-transform border border-surface-container"
+  >
             <span className="material-symbols-outlined text-[18px] text-tertiary">quiz</span>
             <span>Take Skill Quiz</span>
           </button>
 
           <button
-            onClick={() => onNavigate('community-feed')}
-            className="shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface text-xs font-semibold shadow-xs active:scale-95 transition-transform border border-surface-container"
-          >
+    onClick={() => onNavigate("community-feed")}
+    className="shrink-0 flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface text-xs font-semibold shadow-xs active:scale-95 transition-transform border border-surface-container"
+  >
             <span className="material-symbols-outlined text-[18px] text-secondary">forum</span>
             <span>Ask Community</span>
           </button>
         </div>
       </section>
 
-      {/* Main Modular Feed */}
+      {
+    /* Main Modular Feed */
+  }
       <div className="flex flex-col gap-4">
-        {/* Active Roadmap Progress Card */}
+        {
+    /* Active Roadmap Progress Card */
+  }
         <section className="rounded-2xl bg-surface-container-lowest p-5 shadow-xs border border-surface-container">
           <div className="flex items-start justify-between gap-3 mb-2">
             <div className="min-w-0">
@@ -174,7 +169,9 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
             </div>
           </div>
 
-          {/* Linear Bar */}
+          {
+    /* Linear Bar */
+  }
           <div className="my-3">
             <div className="flex items-center justify-between text-xs mb-1.5">
               <span className="text-on-surface-variant">Advanced Backend & API Integration</span>
@@ -182,13 +179,15 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
             </div>
             <div className="w-full h-2 rounded-full bg-surface-container overflow-hidden">
               <div
-                className="h-full bg-gradient-to-r from-primary to-secondary-container rounded-full"
-                style={{ width: '62%' }}
-              />
+    className="h-full bg-gradient-to-r from-primary to-secondary-container rounded-full"
+    style={{ width: "62%" }}
+  />
             </div>
           </div>
 
-          {/* Next Task Card */}
+          {
+    /* Next Task Card */
+  }
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 rounded-xl bg-surface-container-low border border-surface-container">
             <div className="flex items-center gap-2.5 min-w-0">
               <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
@@ -204,16 +203,18 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
               </div>
             </div>
             <button
-              onClick={() => onNavigate('careers-roadmap')}
-              className="shrink-0 flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary font-display text-xs font-bold shadow-xs hover:bg-primary-container active:scale-95 transition-all"
-            >
+    onClick={() => onNavigate("careers-roadmap")}
+    className="shrink-0 flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-on-primary font-display text-xs font-bold shadow-xs hover:bg-primary-container active:scale-95 transition-all"
+  >
               <span>Continue</span>
               <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
             </button>
           </div>
         </section>
 
-        {/* Critical Deadlines */}
+        {
+    /* Critical Deadlines */
+  }
         <section className="rounded-2xl bg-surface-container-lowest p-5 shadow-xs border border-surface-container">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
@@ -223,28 +224,23 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
               <h2 className="font-display font-bold text-base text-on-surface">Critical Deadlines</h2>
             </div>
             <button
-              onClick={() => onTriggerToast('Viewing 5 registered deadlines')}
-              className="text-xs font-bold text-primary flex items-center hover:underline"
-            >
+    onClick={() => onTriggerToast("Viewing 5 registered deadlines")}
+    className="text-xs font-bold text-primary flex items-center hover:underline"
+  >
               <span>View All (5)</span>
               <span className="material-symbols-outlined text-[16px]">chevron_right</span>
             </button>
           </div>
 
           <div className="flex flex-col gap-2">
-            {deadlines.map((dl) => (
-              <div
-                key={dl.id}
-                className="flex items-center justify-between gap-3 p-3 rounded-xl bg-surface-container-low border border-surface-container"
-              >
+            {deadlines.map((dl) => <div
+    key={dl.id}
+    className="flex items-center justify-between gap-3 p-3 rounded-xl bg-surface-container-low border border-surface-container"
+  >
                 <div className="flex items-center gap-2.5 min-w-0">
                   <div
-                    className={`w-10 h-10 rounded-xl flex flex-col items-center justify-center shrink-0 ${
-                      dl.isUrgent
-                        ? 'bg-error-container text-on-error-container font-bold'
-                        : 'bg-surface-container text-on-surface'
-                    }`}
-                  >
+    className={`w-10 h-10 rounded-xl flex flex-col items-center justify-center shrink-0 ${dl.isUrgent ? "bg-error-container text-on-error-container font-bold" : "bg-surface-container text-on-surface"}`}
+  >
                     <span className="text-[10px] leading-tight font-bold uppercase">{dl.month}</span>
                     <span className="font-display text-sm leading-none font-bold">{dl.day}</span>
                   </div>
@@ -253,42 +249,37 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
                       <p className="font-display font-bold text-xs sm:text-sm text-on-surface truncate">
                         {dl.title}
                       </p>
-                      {dl.tag && (
-                        <span className="px-1.5 py-0.2 rounded text-[9px] font-bold bg-error text-on-error uppercase">
+                      {dl.tag && <span className="px-1.5 py-0.2 rounded text-[9px] font-bold bg-error text-on-error uppercase">
                           {dl.tag}
-                        </span>
-                      )}
+                        </span>}
                     </div>
-                    <p className={`text-xs ${dl.isUrgent ? 'text-error font-medium' : 'text-on-surface-variant'}`}>
+                    <p className={`text-xs ${dl.isUrgent ? "text-error font-medium" : "text-on-surface-variant"}`}>
                       {dl.subtext}
                     </p>
                   </div>
                 </div>
 
                 <button
-                  onClick={() => {
-                    onToggleDeadlineReminder(dl.id);
-                    onTriggerToast(
-                      dl.hasReminder ? `Reminder cancelled for ${dl.title}` : `Reminder set for ${dl.title}! 🔔`
-                    );
-                  }}
-                  title={dl.hasReminder ? 'Reminder active' : 'Set reminder'}
-                  className={`shrink-0 p-2 rounded-full transition-colors ${
-                    dl.hasReminder
-                      ? 'bg-primary-fixed text-primary'
-                      : 'hover:bg-surface-container text-on-surface-variant'
-                  }`}
-                >
+    onClick={() => {
+      onToggleDeadlineReminder(dl.id);
+      onTriggerToast(
+        dl.hasReminder ? `Reminder cancelled for ${dl.title}` : `Reminder set for ${dl.title}! \u{1F514}`
+      );
+    }}
+    title={dl.hasReminder ? "Reminder active" : "Set reminder"}
+    className={`shrink-0 p-2 rounded-full transition-colors ${dl.hasReminder ? "bg-primary-fixed text-primary" : "hover:bg-surface-container text-on-surface-variant"}`}
+  >
                   <span className="material-symbols-outlined text-[20px]">
-                    {dl.hasReminder ? 'notifications_active' : 'notifications_none'}
+                    {dl.hasReminder ? "notifications_active" : "notifications_none"}
                   </span>
                 </button>
-              </div>
-            ))}
+              </div>)}
           </div>
         </section>
 
-        {/* Rule-Based Career Recommendations */}
+        {
+    /* Rule-Based Career Recommendations */
+  }
         <section className="rounded-2xl bg-surface-container-lowest p-5 shadow-xs border border-surface-container">
           <div className="flex items-center justify-between mb-3">
             <div>
@@ -301,7 +292,9 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {/* Match 1 */}
+            {
+    /* Match 1 */
+  }
             <div className="p-4 rounded-xl bg-surface-container-low border border-surface-container flex flex-col justify-between gap-2.5">
               <div className="flex items-start justify-between gap-2">
                 <div>
@@ -327,15 +320,17 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
               <div className="flex items-center justify-between pt-1 border-t border-surface-container text-xs">
                 <span className="text-on-surface-variant">42 Active campus openings</span>
                 <button
-                  onClick={() => onNavigate('careers-roadmap')}
-                  className="font-bold text-primary flex items-center gap-0.5 hover:underline"
-                >
+    onClick={() => onNavigate("careers-roadmap")}
+    className="font-bold text-primary flex items-center gap-0.5 hover:underline"
+  >
                   Explore <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
                 </button>
               </div>
             </div>
 
-            {/* Match 2 */}
+            {
+    /* Match 2 */
+  }
             <div className="p-4 rounded-xl bg-surface-container-low border border-surface-container flex flex-col justify-between gap-2.5">
               <div className="flex items-start justify-between gap-2">
                 <div>
@@ -358,9 +353,9 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
               <div className="flex items-center justify-between pt-1 border-t border-surface-container text-xs">
                 <span className="text-on-surface-variant">28 Active campus openings</span>
                 <button
-                  onClick={() => onNavigate('careers-roadmap')}
-                  className="font-bold text-primary flex items-center gap-0.5 hover:underline"
-                >
+    onClick={() => onNavigate("careers-roadmap")}
+    className="font-bold text-primary flex items-center gap-0.5 hover:underline"
+  >
                   Explore <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
                 </button>
               </div>
@@ -368,7 +363,9 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
           </div>
         </section>
 
-        {/* Saved Colleges (3) & Comparator */}
+        {
+    /* Saved Colleges (3) & Comparator */
+  }
         <section className="rounded-2xl bg-surface-container-lowest p-5 shadow-xs border border-surface-container">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
@@ -376,39 +373,39 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
               <h2 className="font-display font-bold text-base text-on-surface">Saved Colleges (3)</h2>
             </div>
             <button
-              onClick={onOpenCompare}
-              className="px-3 py-1.5 rounded-lg bg-surface-container text-primary text-xs font-bold hover:bg-surface-container-high transition-colors flex items-center gap-1"
-            >
+    onClick={onOpenCompare}
+    className="px-3 py-1.5 rounded-lg bg-surface-container text-primary text-xs font-bold hover:bg-surface-container-high transition-colors flex items-center gap-1"
+  >
               <span className="material-symbols-outlined text-[16px]">compare_arrows</span>
               <span>Compare Matrix</span>
             </button>
           </div>
 
           <div className="grid grid-cols-3 gap-2.5">
-            {savedColleges.map((col) => (
-              <div
-                key={col.id}
-                onClick={() => onSelectCollege(col)}
-                className="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container border border-surface-container flex flex-col items-center text-center cursor-pointer transition-colors"
-              >
+            {savedColleges.map((col) => <div
+    key={col.id}
+    onClick={() => onSelectCollege(col)}
+    className="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container border border-surface-container flex flex-col items-center text-center cursor-pointer transition-colors"
+  >
                 <img
-                  src={col.image}
-                  alt={col.name}
-                  className="w-10 h-10 rounded-full object-cover mb-1.5 bg-surface-container shadow-xs"
-                />
+    src={col.image}
+    alt={col.name}
+    className="w-10 h-10 rounded-full object-cover mb-1.5 bg-surface-container shadow-xs"
+  />
                 <h4 className="font-display font-bold text-xs text-on-surface truncate w-full">
-                  {col.name.split('-')[0].trim()}
+                  {col.name.split("-")[0].trim()}
                 </h4>
                 <span className="text-[10px] text-on-surface-variant truncate w-full">
-                  {col.nirfLabel || 'NIRF Ranked'}
+                  {col.nirfLabel || "NIRF Ranked"}
                 </span>
                 <span className="mt-1 font-mono text-xs font-bold text-primary">{col.avgCtc}</span>
-              </div>
-            ))}
+              </div>)}
           </div>
         </section>
 
-        {/* Recently Viewed Study Resources */}
+        {
+    /* Recently Viewed Study Resources */
+  }
         <section className="rounded-2xl bg-surface-container-lowest p-5 shadow-xs border border-surface-container">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
@@ -434,10 +431,10 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
                 </div>
               </div>
               <button
-                onClick={() => onTriggerToast('Downloading Operating Systems Notes (12.4 MB)... 📥')}
-                aria-label="Download PDF"
-                className="shrink-0 p-2 text-primary hover:bg-surface-container rounded-full transition-colors"
-              >
+    onClick={() => onTriggerToast("Downloading Operating Systems Notes (12.4 MB)... \u{1F4E5}")}
+    aria-label="Download PDF"
+    className="shrink-0 p-2 text-primary hover:bg-surface-container rounded-full transition-colors"
+  >
                 <span className="material-symbols-outlined text-[20px]">download</span>
               </button>
             </div>
@@ -457,17 +454,19 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
                 </div>
               </div>
               <button
-                onClick={() => onTriggerToast('Downloading DBMS Papers (8.1 MB)... 📥')}
-                aria-label="Download Solved Papers"
-                className="shrink-0 p-2 text-primary hover:bg-surface-container rounded-full transition-colors"
-              >
+    onClick={() => onTriggerToast("Downloading DBMS Papers (8.1 MB)... \u{1F4E5}")}
+    aria-label="Download Solved Papers"
+    className="shrink-0 p-2 text-primary hover:bg-surface-container rounded-full transition-colors"
+  >
                 <span className="material-symbols-outlined text-[20px]">download</span>
               </button>
             </div>
           </div>
         </section>
 
-        {/* Community Pulse Feed Preview */}
+        {
+    /* Community Pulse Feed Preview */
+  }
         <section className="rounded-2xl bg-surface-container-lowest p-5 shadow-xs border border-surface-container">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
@@ -497,24 +496,26 @@ export const DashboardScreen: React.FC<DashboardScreenProps> = ({
                 </span>
                 <span className="flex items-center gap-1 text-secondary font-semibold">
                   <span
-                    className="material-symbols-outlined text-[16px]"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
+    className="material-symbols-outlined text-[16px]"
+    style={{ fontVariationSettings: "'FILL' 1" }}
+  >
                     verified
                   </span>
                   8 Alumni Verified
                 </span>
               </div>
               <button
-                onClick={() => onOpenDiscussion('discussion-1')}
-                className="font-bold text-primary hover:underline flex items-center gap-0.5"
-              >
+    onClick={() => onOpenDiscussion("discussion-1")}
+    className="font-bold text-primary hover:underline flex items-center gap-0.5"
+  >
                 Join Thread →
               </button>
             </div>
           </div>
         </section>
       </div>
-    </div>
-  );
+    </div>;
+};
+export {
+  DashboardScreen
 };
