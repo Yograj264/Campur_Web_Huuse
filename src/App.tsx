@@ -5,6 +5,7 @@ import { INITIAL_COLLEGES, INITIAL_DISCUSSIONS, CRITICAL_DEADLINES } from './dat
 import { Header } from './components/Header';
 import { BottomNav } from './components/BottomNav';
 import { HomeScreen } from './screens/HomeScreen';
+import LoginPage from './screens/LoginPage.jsx';
 import { DashboardScreen } from './screens/DashboardScreen';
 import { CareersScreen } from './screens/CareersScreen';
 import { CollegesScreen } from './screens/CollegesScreen';
@@ -53,7 +54,9 @@ export default function App() {
 
   const handleNavigate = (screen: ScreenType) => {
     setCurrentScreen(screen);
-    void api().then(applyState).catch(error => showToast(error.message));
+    if (screen !== 'account') {
+      void api().then(applyState).catch(error => showToast(error.message));
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -103,6 +106,10 @@ export default function App() {
 
   const currentDiscussion =
     discussions.find((d) => d.id === selectedDiscussionId) || discussions[0];
+
+  if (currentScreen === 'account') {
+    return <LoginPage onBack={() => handleNavigate('home-discover')} />;
+  }
 
   if (isLoading || loadError) return <div className="min-h-screen flex items-center justify-center bg-surface"><div className="p-8 text-center"><h1 className="text-2xl font-bold">Campus Web House</h1><p className="my-4">{loadError || 'Loading your campus...'}</p>{loadError && <button className="px-6 py-3 bg-primary text-white rounded-xl" onClick={() => void load()}>Retry</button>}</div></div>;
   return (

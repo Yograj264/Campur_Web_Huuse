@@ -1,5 +1,5 @@
 import type * as Data from './data/mockData';
-export type ScreenType = 'home-discover' | 'student-dashboard' | 'careers-roadmap' | 'colleges-admissions' | 'community-feed' | 'community-discussion';
+export type ScreenType = 'home-discover' | 'student-dashboard' | 'careers-roadmap' | 'colleges-admissions' | 'community-feed' | 'community-discussion' | 'account';
 export type College = typeof Data.INITIAL_COLLEGES[number];
 export type CareerPathway = typeof Data.FEATURED_CAREERS[number];
 export type MilestoneStage = typeof Data.FULL_STACK_MILESTONES[number];

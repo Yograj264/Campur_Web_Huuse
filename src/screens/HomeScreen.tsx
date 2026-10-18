@@ -68,7 +68,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
               verified
             </span>
             <span className="font-display text-[11px] uppercase tracking-wider font-bold">
-              Academic & Career Launchpad
+              Hello, Students! Welcome to Campus Web House
             </span>
           </div>
 
@@ -721,7 +721,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
               </p>
             </div>
             <button
-              onClick={() => onNavigate('student-dashboard')}
+              onClick={() => onNavigate('account')}
               className="w-full sm:w-auto px-8 py-3 bg-surface-container-lowest text-primary font-display text-xs sm:text-sm font-bold rounded-xl shadow-md active:scale-95 transition-transform"
             >
               Create Your Free Account
@@ -731,7 +731,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
 
         {/* Educational Trust Badges & Institutional Footer */}
         <footer className="pt-2 pb-8 flex flex-col gap-4 text-center border-t border-surface-container">
-          <div className="flex flex-wrap items-center justify-center gap-4 text-on-surface-variant">
+          {/*<div className="flex flex-wrap items-center justify-center gap-4 text-on-surface-variant">
             <div className="flex items-center gap-1 text-[11px] font-semibold">
               <span className="material-symbols-outlined text-[16px] text-primary">verified_user</span>
               <span>Verified NIRF Data</span>
@@ -744,7 +744,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
               <span className="material-symbols-outlined text-[16px] text-primary">school</span>
               <span>UGC Aligned</span>
             </div>
-          </div>
+          </div>*/}
 
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-on-surface-variant">
             <button onClick={() => onNavigate('home-discover')} className="hover:text-primary">
@@ -762,7 +762,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           </div>
 
           <p className="text-[10px] text-outline">
-            © 2025 Campus Web House Inc. Designed for the Indian Collegiate Ecosystem. All rights reserved.
+            © 2026 Campus Web House Inc. Designed for the Indian Collegiate Ecosystem. All rights reserved.
           </p>
         </footer>
       </div>
