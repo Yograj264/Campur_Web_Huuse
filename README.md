@@ -1,97 +1,83 @@
-# Campus Web House — Django project
+# Campus Web Connect
 
-Campus is now served by Python Django 5.2, with SQLite persistence and Django admin. The existing React/JavaScript UI is retained to preserve all screens, styling, mobile navigation, modals, comparison tools, and ROI calculator. This is a Django backend with a React frontend, rather than a rewrite into server-rendered pages.
+A small React JavaScript website with a Django college catalogue. The current scope follows the landing page only.
 
-## Start the prepared project on this computer
+## Included
 
-Open PowerShell in `D:\College Project\Campus` and run:
+- Landing page, hero, college carousel, and five career cards.
+- College directory with search and read-only college details.
+- Five simple editorial career guides, selected from the landing cards.
+- Django session authentication with email OTP registration, email/password login, logout, password recovery and optional Twilio phone OTP. See [Authentication setup and working flow](docs/AUTHENTICATION_GUIDE.md).
+- A consistent responsive header across home, colleges, and careers.
+- Django admin for editing colleges and one read-only catalogue endpoint.
 
-```powershell
-& '..\.venv\Scripts\python.exe' manage.py runserver
-```
+Dashboard, community discussions, mentor requests, profile progress, notifications, reminders, assessment, ROI, comparison dialogs, and the unfinished Expo starter have been removed from the active application. Plan Your Future now opens the career guides.
 
-Open http://127.0.0.1:8000/. The database has already been migrated and seeded, and the frontend assets are already built. Node.js is only required when editing/rebuilding the frontend.
-
-## Set up on another computer
-
-Requires Python 3.10+ and Node.js 20.19+ or 22.12+ for frontend builds.
-
-```powershell
-cd Campus
-python -m venv .venv
-& '.\.venv\Scripts\python.exe' -m pip install -r requirements.txt
-npm ci
-npm run build
-& '.\.venv\Scripts\python.exe' manage.py migrate
-& '.\.venv\Scripts\python.exe' manage.py seed_demo
-& '.\.venv\Scripts\python.exe' manage.py runserver
-```
-
-## Manage content
-
-Use the same Python executable as above:
+## Run on this computer
 
 ```powershell
-& '..\.venv\Scripts\python.exe' manage.py createsuperuser
+cd "D:\College Project\Campus"
+& "..\.venv\Scripts\python.exe" manage.py runserver
 ```
 
-Visit http://127.0.0.1:8000/admin/ to edit colleges, discussions, answers, and review saved mentor questions. On another computer use `.\.venv\Scripts\python.exe` instead.
+Open http://127.0.0.1:8000/. For automatic frontend updates, keep Django running, open another terminal in Campus, run `npm run dev`, and open http://localhost:3000/static/frontend/.
 
-## Features and persistence
+## Source layout
 
-- Colleges, discussions, and answers are stored in SQLite through Django models.
-- Bookmarks, discussion/answer votes, helpful flags, deadline reminders, profile score, notification read state, and selected career track persist per browser session.
-- New discussions and answers appear in the database; new threads start with their own answer list.
-- Mentor questions are stored for review in Django admin. There is no email delivery or automatic mentor reply service.
-- College searching, sorting, drawer filters, comparison, ROI calculator, career roadmaps, and assessment remain in the original frontend.
-- The existing student profile is a demo profile. Student login/registration has not been introduced; admin uses Django authentication. Browser state follows Django session expiry (two weeks by default).
-- Original admissions figures, deadlines, mentor identities, assessment results, and resources are sample content, not live verified feeds. Notification content, roadmap tasks, report dialogs, and several original toast-only controls remain demo interactions.
+```text
+src/
+  App.jsx                         Screen selection and college loading
+  api.js                          Read-only API helper
+  main.jsx / index.css            Entry point and shared basics
+  screens/
+    HomeScreen.jsx / .css         Landing-page content and styling
+    CollegesScreen.jsx            Directory and college detail view
+    CareersScreen.jsx             Roadmap list and selected guide
+    LoginPage.jsx / .css          Connected account forms and sliding panels
+  components/landing/
+    LandingHeader.jsx             Header and responsive menu
+    LandingIcon.jsx               SVG icons
+    CollegeImage.jsx              College image and fallback
+  data/roadmaps.js                 Five editorial guide definitions
+portal/
+  views.py / urls.py              College catalogue and authentication routes
+  models.py / admin.py            Catalogue model and admin
+  demo_data.json                  Sample colleges for seeding
+  management/commands/seed_demo.py
+  migrations/                     Existing schema history
+```
 
-## Development and checks
+## Data and compatibility
 
-After editing frontend files, run `npm run build` to update the Django HTML template and static assets. For hot reload, run Django and `npm run dev` together, and use the Vite URL printed by the terminal; `/api/` is proxied to Django.
+Your existing db.sqlite3 is preserved. Only College is exposed through the active API and admin. Legacy models and their original migration are intentionally retained to avoid dropping stored discussion, answer, preference, or mentor-question records. They have no public routes or application features. Retire those tables later only through a deliberate data-retention decision.
+
+```powershell
+& "..\.venv\Scripts\python.exe" manage.py migrate
+& "..\.venv\Scripts\python.exe" manage.py seed_demo
+& "..\.venv\Scripts\python.exe" manage.py createsuperuser
+```
+
+Normal seeding inserts missing sample colleges and preserves existing edits. `seed_demo --refresh` intentionally replaces matching sample college records. Add or edit current records in /admin/. All supplied college facts are sample information, not live verified admissions data.
+
+## Check and build
 
 ```powershell
 npm run lint
 npm run build
-& '..\.venv\Scripts\python.exe' manage.py check
-& '..\.venv\Scripts\python.exe' manage.py test
+& "..\.venv\Scripts\python.exe" manage.py check
+& "..\.venv\Scripts\python.exe" manage.py test portal
 ```
 
-`npm run seed:export` updates `portal/demo_data.json` from the original sample data. `seed_demo` is idempotent and preserves existing records. Its optional `--refresh` flag replaces bundled sample records; use it deliberately when updating sample content.
+`npm run lint` checks JavaScript/JSX syntax and resolves the application imports with esbuild. `npm run build` builds Vite, replaces compiled assets, copies public images, and updates the Django template. If a manually started Django server still references old assets after rebuilding, restart it and hard-refresh the browser. `npm run clean` removes dist and source Python caches, preserving the database and current frontend assets.
 
-## Project cleanup
+The frontend uses ordinary CSS; TypeScript and Tailwind are no longer needed. Historical PDFs under output are retained as documents about earlier project versions, not descriptions of this simplified version.
 
-`npm run clean` removes the generated `dist/` build and Python bytecode caches within the Django source folders. It preserves the database, virtual environment, dependencies, and Django's current frontend assets. `npm run build` replaces those frontend assets with the latest build, so old hashed JavaScript and CSS files do not accumulate.
+## Render
 
-The unused Vite starter screens, images, duplicate configuration, AI Studio metadata, and unused Node packages have been removed. React and React DOM remain runtime dependencies; build and JavaScript-checking tools are development dependencies.
+Build Command: `bash build.sh`
 
-## Layout
+Start Command: `gunicorn campus_project.wsgi:application --bind 0.0.0.0:$PORT`
 
-- `manage.py`, `campus_project/`: Django configuration and entry points.
-- `portal/`: models, admin, JSON views, migrations, tests, and sample data command.
-- `templates/index.html`, `static/frontend/`: built frontend served by Django.
-- `src/`: preserved frontend with Django API integration.
-- `db.sqlite3`: local database, excluded from version control.
+Set `DJANGO_DEBUG=0`, a generated `DJANGO_SECRET_KEY`, and your hostname in `DJANGO_ALLOWED_HOSTS`. The build installs dependencies, builds React, collects static files for WhiteNoise, applies migrations, and imports missing sample colleges. The current database is still SQLite; ordinary Render filesystem storage is ephemeral. Configure durable database storage before retaining real production data.
 
-## Production settings
-
-Set `DJANGO_DEBUG=0`, a strong `DJANGO_SECRET_KEY`, and `DJANGO_ALLOWED_HOSTS` in the process environment. `.env.example` documents the variables but is not loaded automatically. Run `manage.py collectstatic`, serve `staticfiles/` through a web server, and use a production WSGI/ASGI server with HTTPS. Production cookies require HTTPS. External fonts and original remote images need internet access.
-
-The integration follows Django's [static files guidance](https://docs.djangoproject.com/en/5.2/howto/static-files/) and [CSRF guidance](https://docs.djangoproject.com/en/5.2/howto/csrf/).
-
-## JavaScript source
-
-React components now use `.jsx`; API and data modules use `.js`. The Vite configuration is `vite.config.js`. `npm run lint` checks JavaScript/JSX syntax and resolves the web application imports using esbuild; it is not a TypeScript or ESLint run. The unfinished Expo starter in `mobile/` also uses JavaScript and has not been converted into the full mobile application. Existing PDF review documents are historical snapshots and may still mention TypeScript.
-
-## Render deployment
-
-Create a Python web service with the root directory containing manage.py. Set Build Command to `bash build.sh` and Start Command to `gunicorn campus_project.wsgi:application --bind 0.0.0.0:$PORT`.
-
-Set `DJANGO_DEBUG=0`, a generated `DJANGO_SECRET_KEY`, and `DJANGO_ALLOWED_HOSTS=campus-web-house.onrender.com` (or your actual hostname). Render's `RENDER_EXTERNAL_HOSTNAME` is also accepted automatically. Do not put a scheme or path in allowed hosts.
-
-The build installs Python/Node dependencies, builds the React UI, collects static files, applies migrations, and imports missing demo records. WhiteNoise serves the collected JavaScript and CSS with DEBUG disabled. Vite already provides hashed filenames; compressed static storage preserves those paths.
-
-This version still uses SQLite. Its file on an ordinary Render ephemeral filesystem is not durable across deployments/replacement instances. Use a properly configured persistent database before retaining real submissions. Setting DATABASE_URL alone does not configure this project's database. The build's seed command initializes demo content, not a backup of existing user data.
-
-After pushing these changes and redeploying, check `/`, the script/CSS paths in its HTML, and `/api/bootstrap/`. If the API still returns 500, inspect Render's runtime logs for the traceback instead of enabling public DEBUG pages.
+More editing instructions: [docs/HOME_SCREEN_GUIDE.md](docs/HOME_SCREEN_GUIDE.md).

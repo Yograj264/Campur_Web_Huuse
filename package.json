@@ -1,5 +1,5 @@
 {
-  "name": "campus-web-house",
+  "name": "campus-web-connect",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +8,7 @@
     "build": "vite build && node scripts/build-django.mjs",
     "preview": "vite preview",
     "clean": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/clean.ps1",
-    "lint": "node scripts/check-javascript.mjs",
-    "seed:export": "node scripts/export-demo.mjs"
+    "lint": "node scripts/check-javascript.mjs"
   },
   "dependencies": {
     "react": "^19.0.1",
@@ -17,8 +16,6 @@
   },
   "devDependencies": {
     "esbuild": "^0.27.7",
-    "tailwindcss": "^4.3.3",
-    "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react": "^6.1.1",
     "vite": "^8.3.0"
   }

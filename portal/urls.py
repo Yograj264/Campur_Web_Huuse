@@ -1,11 +1,6 @@
 from django.urls import path
-from . import views, mobile_views
+from . import views
 
-urlpatterns = [
-    path('bootstrap/', views.bootstrap),
-    path('action/', views.action),
-    path('discussions/<slug:identifier>/answers/', views.answers),
-    path('mobile/bootstrap/', mobile_views.bootstrap),
-    path('mobile/action/', mobile_views.action),
-    path('mobile/discussions/<slug:identifier>/answers/', mobile_views.answers),
-]
+urlpatterns = [path('bootstrap/', views.bootstrap, name='college-catalogue')]
+from .auth_views import auth_api
+urlpatterns += [path('auth/<str:action>/', auth_api, name='auth-api')]

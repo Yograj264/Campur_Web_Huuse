@@ -1,5 +1,4 @@
 Django>=5.2.18
 gunicorn
-asgiref
-sqlparse
 whitenoise>=6.8,<7
+python-dotenv>=1.0,<2

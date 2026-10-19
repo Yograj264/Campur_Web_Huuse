@@ -1,3 +1,4 @@
+import uuid
 from django.db import models
 class College(models.Model):
     id = models.SlugField(primary_key=True)
@@ -6,6 +7,9 @@ class College(models.Model):
     annual_fee = models.DecimalField(max_digits=8, decimal_places=2, default=0)
     data = models.JSONField(default=dict)
     def __str__(self): return self.name
+# Legacy models are retained solely for database/migration compatibility.
+# Their screens, API endpoints, and admin registrations have been removed.
+# Removing them would require a migration that deletes stored records.
 class Discussion(models.Model):
     id = models.SlugField(primary_key=True)
     title = models.CharField(max_length=300)
@@ -26,3 +30,24 @@ class MentorQuestion(models.Model):
     mentor = models.CharField(max_length=200, blank=True)
     question = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+
+class AuthChallenge(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    session = models.CharField(max_length=64)
+    purpose = models.CharField(max_length=20)
+    destination = models.CharField(max_length=254)
+    code_hash = models.CharField(max_length=256, blank=True)
+    payload = models.JSONField(default=dict)
+    attempts = models.PositiveIntegerField(default=0)
+    consumed = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    expires_at = models.DateTimeField()
+
+class PhoneIdentity(models.Model):
+    user = models.OneToOneField('auth.User', on_delete=models.CASCADE)
+    phone = models.CharField(max_length=16, unique=True)
+
+class AuthRate(models.Model):
+    key = models.CharField(max_length=64, unique=True)
+    count = models.PositiveIntegerField(default=0)
+    started_at = models.DateTimeField()
