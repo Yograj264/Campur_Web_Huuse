@@ -10,7 +10,7 @@ if not SECRET_KEY:
     if not DEBUG:
         raise ImproperlyConfigured('Set DJANGO_SECRET_KEY in production.')
     SECRET_KEY = 'campus-local-development-only-key'
-ALLOWED_HOSTS = [host.strip() for host in os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,192.168.31.188,testserver').split(',') if host.strip()]
+ALLOWED_HOSTS = [host.strip() for host in os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost,127.0.0.1,192.168.1.4,testserver').split(',') if host.strip()]
 if os.environ.get('RENDER_EXTERNAL_HOSTNAME'):
     ALLOWED_HOSTS.append(os.environ['RENDER_EXTERNAL_HOSTNAME'])
 INSTALLED_APPS = ['django.contrib.admin','django.contrib.auth','django.contrib.contenttypes','django.contrib.sessions','django.contrib.messages','django.contrib.staticfiles','portal']
@@ -57,7 +57,14 @@ CSRF_TRUSTED_ORIGINS = [value.strip() for value in os.environ.get('DJANGO_CSRF_T
 if os.environ.get('RENDER_EXTERNAL_HOSTNAME'):
     CSRF_TRUSTED_ORIGINS.append('https://' + os.environ['RENDER_EXTERNAL_HOSTNAME'])
 if DEBUG:
-    CSRF_TRUSTED_ORIGINS += ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://192.168.31.188:3000']
+    from .network import local_ipv4_addresses
+    ALLOWED_HOSTS = list(dict.fromkeys(ALLOWED_HOSTS + local_ipv4_addresses()))
+    CSRF_TRUSTED_ORIGINS += [
+        f'http://{host}:{port}'
+        for host in ['localhost', '127.0.0.1'] + local_ipv4_addresses()
+        for port in (3000, 8000)
+    ]
+CSRF_TRUSTED_ORIGINS = list(dict.fromkeys(CSRF_TRUSTED_ORIGINS))
 
 if os.environ.get('RENDER_EXTERNAL_HOSTNAME'):
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

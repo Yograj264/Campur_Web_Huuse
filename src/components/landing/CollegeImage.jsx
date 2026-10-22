@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./LandingShared.css";
 import { LandingIcon } from "./LandingIcon";
 
 export function CollegeImage({ college }) {

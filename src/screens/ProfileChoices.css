@@ -1,0 +1,89 @@
+.profile-choice-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #35425d;
+}
+.profile-choice details {
+  border: 1px solid #dce3ef;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+.profile-choice summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  cursor: pointer;
+  min-height: 22px;
+  font-size: 13px;
+  color: #4f5474;
+  list-style: none;
+}
+.profile-choice summary::-webkit-details-marker {
+  display: none;
+}
+.profile-choice summary:focus-visible {
+  outline: 3px solid #ac91ff;
+  outline-offset: -3px;
+}
+.profile-choice summary > span:first-child {
+  overflow-wrap: anywhere;
+}
+.profile-choice-menu {
+  border-top: 1px solid #eee8f8;
+  padding: 10px;
+}
+.profile-choice-menu > input[type="search"] {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.profile-choice-options {
+  max-height: 200px;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+.profile-choice-options label {
+  display: flex !important;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 6px;
+  margin: 0 !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.profile-choice-options label:hover {
+  background: #f5f1ff;
+}
+.profile-choice-options input[type="checkbox"] {
+  width: 15px !important;
+  height: 15px;
+  min-height: 0;
+  margin: 0;
+  accent-color: #6536ed;
+  flex-shrink: 0;
+}
+.profile-choice-options label:has(input:disabled) {
+  opacity: 0.45;
+  cursor: default;
+}
+.profile-choice > small {
+  font-size: 11px;
+  color: #81758e;
+  display: block;
+  margin-top: 6px;
+}
+.profile-choice-menu[aria-invalid="true"] {
+  border: 1px solid #bd384b;
+}
+.profile-choice-options p {
+  font-size: 12px;
+  color: #80718c;
+  padding: 8px;
+}

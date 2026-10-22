@@ -1,0 +1,290 @@
+/* Shared header, college-image and compatibility styles used by active screens. */
+.connect-header {
+  --connect-blue: #0667ff;
+  --connect-ink: #090b2f;
+  --connect-muted: #566279;
+  font-family: Inter, Arial, sans-serif;
+  color: var(--connect-ink);
+}
+.connect-header * {
+  box-sizing: border-box;
+}
+.connect-header button {
+  font: inherit;
+  cursor: pointer;
+}
+.connect-header button:focus-visible {
+  outline: 3px solid #0667ff;
+  outline-offset: 5px;
+}
+.connect-header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid #edf0f6;
+  box-shadow: 0 2px 8px #0b204004;
+}
+.connect-header-inner {
+  height: 100%;
+  max-width: 1430px;
+  width: calc(100% - 108px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+.connect-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 0;
+  background: none;
+  padding: 0;
+  white-space: nowrap;
+  color: var(--connect-ink);
+  font-family: "Plus Jakarta Sans", Inter, sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  letter-spacing: -1px;
+}
+.connect-brand svg {
+  color: var(--connect-blue);
+  flex-shrink: 0;
+}
+.connect-nav {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  gap: 28px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.connect-nav button {
+  position: relative;
+  background: none;
+  border: 0;
+  padding: 0 8px;
+  color: #253650;
+  font-weight: 500;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.connect-nav button.is-active {
+  color: var(--connect-blue);
+}
+.connect-nav button.is-active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  left: 0;
+  right: 0;
+  background: var(--connect-blue);
+}
+.connect-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.connect-header-actions button {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.connect-header-actions .connect-menu {
+  display: none;
+  width: 44px;
+  background: #f5f7fa;
+  border: 0;
+}
+.connect-college-image {
+  height: 128px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #d7edff, #e8f5df);
+}
+.connect-college-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+.connect-campus-placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  flex-direction: column;
+  color: #597d99;
+  font-size: 10px;
+}
+@media (max-width: 1250px) {
+  .connect-header-inner {
+    width: calc(100% - 64px);
+  }
+  .connect-brand {
+    font-size: 21px !important;
+    gap: 8px;
+  }
+  .connect-nav {
+    gap: 12px;
+  }
+  .connect-header-inner {
+    gap: 15px;
+  }
+  .connect-header-actions {
+    gap: 9px;
+  }
+}
+@media (max-width: 1024px) {
+  .connect-brand {
+    font-size: 19px !important;
+  }
+  .connect-brand svg {
+    width: 34px;
+  }
+  .connect-nav button {
+    font-size: 13px;
+    padding: 0 4px;
+  }
+  .connect-nav {
+    gap: 10px;
+  }
+  .connect-header-actions {
+    gap: 7px;
+  }
+}
+@media (max-width: 767px) {
+  .connect-header-inner {
+    width: calc(100% - 36px);
+  }
+  .connect-header-inner {
+    gap: 8px;
+  }
+  .connect-brand {
+    font-size: 18px !important;
+    letter-spacing: -0.65px;
+  }
+  .connect-brand svg {
+    width: 33px;
+  }
+  .connect-header-actions .connect-menu {
+    display: flex;
+  }
+  .connect-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    height: auto;
+    background: white;
+    padding: 12px 18px;
+    box-shadow: 0 6px 12px #10204010;
+  }
+  .connect-nav.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .connect-nav button {
+    text-align: left;
+    padding: 13px 8px;
+    font-size: 15px;
+  }
+  .connect-nav button.is-active:after {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .connect-brand {
+    font-size: 16px !important;
+    gap: 6px;
+  }
+  .connect-brand svg {
+    width: 28px;
+  }
+  .connect-header-actions {
+    gap: 5px;
+  }
+  .connect-header-actions button {
+    min-height: 38px;
+    border-radius: 11px;
+  }
+  .connect-header-actions .connect-menu {
+    width: 34px;
+  }
+}
+/* Keep the student's full head visible and card rows evenly aligned. */
+.connect-college-image {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.connect-header-actions .connect-account {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  height: 44px;
+  min-width: 44px;
+  padding: 4px 12px 4px 5px;
+  gap: 8px;
+  border: 1px solid #dbe6fa;
+  border-radius: 24px;
+  background: #edf4ff;
+  color: #096bff;
+  cursor: pointer;
+}
+.connect-header-actions .connect-account:hover {
+  background: #dceaff;
+}
+.connect-header-actions .connect-account:focus-visible {
+  outline: 3px solid #a6c9ff;
+  outline-offset: 3px;
+}
+
+.connect-account-avatar {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.connect-account-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.connect-account-label {
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+@media (max-width: 520px) {
+  .connect-header-actions .connect-account {
+    gap: 5px;
+    padding-right: 9px;
+  }
+  .connect-account-label {
+    max-width: 84px;
+    font-size: 11px;
+  }
+}

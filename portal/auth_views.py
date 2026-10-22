@@ -21,7 +21,7 @@ from django.middleware.csrf import get_token
 from django.utils import timezone
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.cache import never_cache
-from .models import AuthChallenge, PhoneIdentity, AuthRate
+from .models import AuthChallenge, PhoneIdentity, AuthRate, StudentProfile
 
 User = get_user_model()
 
@@ -29,7 +29,10 @@ class AuthError(Exception):
     pass
 
 def user_data(user):
-    return {'id': user.pk, 'name': user.first_name or (user.email.split('@')[0] if user.email else 'Phone user'), 'email': user.email} if user.is_authenticated else None
+    if not user.is_authenticated:
+        return None
+    profile, _ = StudentProfile.objects.get_or_create(user=user, defaults={'full_name': user.first_name})
+    return {'id': user.pk, 'name': user.first_name or (user.email.split('@')[0] if user.email else 'Phone user'), 'email': user.email, 'is_staff': user.is_staff, 'profile_complete': profile.is_complete, 'photo_url': '/api/profile/photo/?v=' + profile.updated_at.isoformat() if profile.photo else None} if user.is_authenticated else None
 
 def limit(key, maximum, seconds):
     digest = hashlib.sha256(key.encode()).hexdigest()

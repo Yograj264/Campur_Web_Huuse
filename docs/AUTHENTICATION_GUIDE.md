@@ -2,7 +2,7 @@
 
 ## What is connected
 
-The React Sign In/Sign Up page now calls Django APIs. Email registration requires a real code check before a user is created. Email/password login establishes a Django session. Logout clears it. Refresh restores the signed-in header. Forgot Password sends an email code; a valid code and a valid new password change the password. Phone OTP is integrated with Twilio Verify, but needs your provider account and credentials.
+The React Sign In/Sign Up page now calls Django APIs. Email registration requires a real code check before a user is created. Email/password login establishes a Django session. Logout clears it. Refresh restores the signed-in account and opens its student dashboard. See [Student profile guide](STUDENT_PROFILE_GUIDE.md). Forgot Password sends an email code; a valid code and a valid new password change the password. Phone OTP is integrated with Twilio Verify, but needs your provider account and credentials.
 
 Google login remains disabled and is labelled as unconfigured. It requires a separate OAuth/OpenID Connect setup; SMTP email and phone OTP do not enable Google login.
 
@@ -47,7 +47,7 @@ The stored pending password is the one from step 2. To change those details or r
 4. GET /api/auth/session/ restores the signed-in user on later page loads.
 5. Log Out POSTs /api/auth/logout/ and Django clears the session.
 
-Email OTP is required at registration, not at every password login. This is email verification, not two-factor authentication. Public college and career pages remain public; this change does not add a private dashboard.
+Email OTP is required at registration, not at every password login. This is email verification, not two-factor authentication. Public college and career pages remain public. Signed-in students also have a private [profile dashboard](STUDENT_PROFILE_GUIDE.md).
 
 ### 3. Forgot password using email OTP
 
@@ -175,12 +175,12 @@ Authentication requires persistent database storage. The default SQLite file on 
 | src/api.js | CSRF-aware authRequest helper |
 | src/screens/LoginPage.jsx | Connected account, code entry and recovery forms |
 | src/App.jsx | Session restore, successful login and logout state |
-| src/components/landing/LandingHeader.jsx | Signed-in name and Log Out |
+| src/components/landing/LandingHeader.jsx | Account name/photo and profile navigation |
 | .env.example | Configuration template, containing no real credentials |
 | portal/test_auth.py | Automated authentication/security/provider-mock tests |
 | portal/management/commands/cleanup_auth.py | Expired authentication record cleanup |
 
-GET /api/auth/session/ returns {user, csrfToken}. POST actions: signup, login, logout, reset, phone, verify. Signup/reset/phone return a challenge identifier; verify takes challenge plus otp (and a new password for reset). User responses expose only id/name/email. OTPs and password hashes are never included in API responses.
+GET /api/auth/session/ returns {user, csrfToken}. POST actions: signup, login, logout, reset, phone, verify. Signup/reset/phone return a challenge identifier; verify takes challenge plus otp (and a new password for reset). User responses include account identity, staff status and profile completion/photo metadata. OTPs and password hashes are never included in API responses.
 
 Backend tests use in-memory email and mocked Twilio calls, so they do not send paid SMS or real emails. Actual SMTP/SMS delivery remains to be tested after you configure your own credentials.
 

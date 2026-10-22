@@ -1,253 +1,473 @@
-import { useRef } from "react";
+import { useState } from "react";
 import { LandingIcon } from "../components/landing/LandingIcon";
 import { CollegeImage } from "../components/landing/CollegeImage";
 import { ROADMAPS } from "../data/roadmaps";
-import "./HomeScreen.css";
-
-const COLLEGE_ORDER = [
-  "iit-bombay",
-  "iit-delhi",
-  "iiit-hyderabad",
-  "vit-vellore",
-  "bits-pilani",
-];
-const DISPLAY_NAMES = {
-  "iit-bombay": "IIT Bombay",
-  "iit-delhi": "IIT Delhi",
-  "iiit-hyderabad": "IIIT Hyderabad",
-  "vit-vellore": "VIT Vellore",
-  "bits-pilani": "BITS Pilani",
-};
+import { readCollegeShortlist } from "../data/collegeDetails";
+import "./CampusHome.css";
 
 export function HomeScreen({
   onNavigate,
   onSelectCareer,
   onSelectCollege,
   colleges = [],
+  user,
 }) {
-  const collegeRow = useRef(null);
-  const popular = [...colleges].sort((a, b) => {
-    const ai = COLLEGE_ORDER.indexOf(a.id),
-      bi = COLLEGE_ORDER.indexOf(b.id);
-    return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
-  });
+  const [query, setQuery] = useState("");
+  const [applied, setApplied] = useState("");
+  const [saved, setSaved] = useState(readCollegeShortlist);
+  const matches = colleges
+    .filter((c) =>
+      `${c.name} ${c.location} ${c.subLocation || ""} ${c.programs || ""} ${c.category || ""}`
+        .toLowerCase()
+        .includes(applied.toLowerCase()),
+    )
+    .sort(
+      (a, b) =>
+        Number(Boolean(b.image)) - Number(Boolean(a.image)) ||
+        Number(
+          `${b.location} ${b.subLocation}`.toLowerCase().includes("pune"),
+        ) -
+          Number(
+            `${a.location} ${a.subLocation}`.toLowerCase().includes("pune"),
+          ),
+    )
+    .slice(0, 4);
+  function toggle(id) {
+    const next = saved.includes(id)
+      ? saved.filter((value) => value !== id)
+      : [...saved, id];
+    setSaved(next);
+    try {
+      localStorage.setItem("campus-college-shortlist", JSON.stringify(next));
+    } catch {
+      /* Optional device shortlist does not block browsing. */
+    }
+  }
+  function search(e) {
+    e.preventDefault();
+    setApplied(query.trim());
+  }
+  const chips = ["Pune", "Engineering", "MCA", "B.Tech", "Private"];
   return (
-    <div className="connect-home">
-      <section className="connect-hero" aria-labelledby="connect-title">
-        <div className="connect-container connect-hero-inner">
-          <div className="connect-hero-copy">
-            <p className="connect-eyebrow">
-              Explore <span>·</span> Compare <span>·</span> Plan your career
-            </p>
-            <h1 id="connect-title">
-              Find the Right College
-              <br />
-              Build Your <span>Career Path</span>
-            </h1>
-            <p className="connect-hero-description">
-              Explore colleges and discover detailed career roadmaps
-              <br className="connect-desktop-break" /> to make informed
-              decisions for your future.
-            </p>
-          </div>
-          <div className="connect-hero-art">
-            <div className="connect-hero-circle" />
-            <img
-              className="connect-student"
-              src={`${import.meta.env.BASE_URL}landing/student-hero.png`}
-              alt="College student holding a laptop and looking toward the future"
-              fetchPriority="high"
-            />
-            <svg
-              className="connect-hero-arrows"
-              viewBox="0 0 680 300"
-              fill="none"
-              aria-hidden="true"
-            >
-              <defs>
-                <marker
-                  id="connect-arrow-head"
-                  markerWidth="8"
-                  markerHeight="8"
-                  refX="6"
-                  refY="4"
-                  orient="auto"
-                >
-                  <path d="m1 1 5 3-5 3" stroke="#0878bd" strokeWidth="1.4" />
-                </marker>
-              </defs>
-              <path
-                d="M160 110c40-8 72 6 84 34M165 160c0 30 26 45 52 56M480 175c42-20 69-43 73-68M570 214l-50 13"
-                stroke="#0878bd"
-                strokeWidth="1.8"
-                strokeDasharray="6 5"
-                markerEnd="url(#connect-arrow-head)"
-              />
-            </svg>
+    <div className="cc-home">
+      <section className="cc-hero" aria-labelledby="cc-hero-title">
+        <div className="cc-hero-photo">
+          <img
+            src={`${import.meta.env.BASE_URL}landing/campus-future.png`}
+            alt="Two students with books and a laptop on a university campus"
+            fetchPriority="high"
+          />
+        </div>
+        <div className="cc-hero-copy">
+          <span className="cc-audience">
+            <span aria-hidden="true">✦</span> For your next chapter
+          </span>
+          <h1 id="cc-hero-title">
+            Discover Colleges.
+            <br />
+            <em>Explore Careers.</em>
+            <br />
+            Build Your Future.
+          </h1>
+          <p>
+            Get to know your college options, explore technology careers with
+            step-by-step roadmaps, and take your next step with confidence.
+          </p>
+          <div className="cc-hero-actions">
             <button
-              className="connect-float connect-float-colleges"
+              className="cc-primary"
               onClick={() => onNavigate("colleges-admissions")}
             >
-              <LandingIcon name="building" size={38} />
-              <span>
-                Explore
-                <br />
-                Colleges
-              </span>
+              Explore Colleges <LandingIcon name="arrow" size={17} />
             </button>
             <button
-              className="connect-float connect-float-careers"
+              className="cc-outline"
               onClick={() => onNavigate("careers-roadmap")}
             >
-              <LandingIcon name="chart" size={39} />
-              <span>
-                Discover
-                <br />
-                Career Paths
-              </span>
+              <LandingIcon name="code" size={17} />
+              Career Roadmaps
             </button>
             <button
-              className="connect-float connect-float-future"
-              onClick={() => onNavigate("careers-roadmap")}
+              className="cc-outline"
+              onClick={() => onNavigate("community")}
             >
-              <LandingIcon name="target" size={39} />
-              <span>
-                Plan
-                <br />
-                Your Future
-              </span>
+              <LandingIcon name="people" size={18} />
+              Join Community
             </button>
-            <i className="connect-spark connect-spark-one" />
-            <i className="connect-spark connect-spark-two" />
           </div>
-        </div>
-      </section>
-
-      <section
-        className="connect-colleges"
-        aria-labelledby="connect-colleges-title"
-      >
-        <div className="connect-container">
-          <div className="connect-section-heading">
-            <div className="connect-heading-main">
-              <span className="connect-section-icon connect-icon-blue">
-                <LandingIcon name="building" size={32} />
-              </span>
-              <div>
-                <h2 id="connect-colleges-title">Popular Colleges</h2>
-                <p>
-                  Explore top colleges with key information to help you decide.
-                </p>
+          <div className="cc-stats">
+            {[
+              ["building", `${colleges.length}`, "Colleges to explore"],
+              ["shield", `${ROADMAPS.length}`, "Career roadmaps"],
+              ["people", "Your space", "Student profile"],
+              ["bulb", "Next step", "Career guidance"],
+            ].map(([icon, value, label], i) => (
+              <div key={label}>
+                <span className={`cc-stat-icon cc-tone-${i}`}>
+                  <LandingIcon name={icon} size={23} />
+                </span>
+                <span>
+                  <strong>{value}</strong>
+                  <small>{label}</small>
+                </span>
               </div>
-            </div>
-            <button
-              className="connect-text-link"
-              onClick={() => onNavigate("colleges-admissions")}
-            >
-              View All Colleges <LandingIcon name="arrow" size={20} />
-            </button>
-          </div>
-          <div className="connect-college-carousel">
-            <div className="connect-college-row" ref={collegeRow}>
-              {popular.map((college) => (
-                <button
-                  className="connect-college-card"
-                  key={college.id}
-                  onClick={() => onSelectCollege(college)}
-                  aria-label={`View details for ${college.name}`}
-                >
-                  <CollegeImage college={college} />
-                  <div className="connect-college-content">
-                    <h3>{DISPLAY_NAMES[college.id] || college.name}</h3>
-                    <p>
-                      <LandingIcon name="pin" size={16} />
-                      <span>{college.subLocation || college.location}</span>
-                    </p>
-                  </div>
-                </button>
-              ))}
-            </div>
-            {popular.length > 5 && (
-              <button
-                className="connect-carousel-next"
-                aria-label="Show more colleges"
-                onClick={() => {
-                  const row = collegeRow.current;
-                  if (!row) return;
-                  const atEnd =
-                    row.scrollLeft + row.clientWidth >= row.scrollWidth - 8;
-                  row.scrollTo({
-                    left: atEnd ? 0 : row.scrollLeft + row.clientWidth * 0.65,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                <LandingIcon name="chevron" size={26} />
-              </button>
-            )}
-          </div>
-          {popular.length === 0 && (
-            <p className="connect-empty">
-              No colleges are available yet. Add records in Django admin or run
-              the demo-data import.
-            </p>
-          )}
-        </div>
-      </section>
-
-      <section
-        className="connect-roadmaps"
-        aria-labelledby="connect-roadmaps-title"
-      >
-        <div className="connect-container">
-          <div className="connect-section-heading">
-            <div className="connect-heading-main">
-              <span className="connect-section-icon connect-icon-purple">
-                <LandingIcon name="chart" size={34} />
-              </span>
-              <div>
-                <h2 id="connect-roadmaps-title">Career Roadmaps</h2>
-                <p>Explore step-by-step guides for different career paths.</p>
-              </div>
-            </div>
-            <button
-              className="connect-text-link"
-              onClick={() => onNavigate("careers-roadmap")}
-            >
-              View All Roadmaps <LandingIcon name="arrow" size={20} />
-            </button>
-          </div>
-          <div className="connect-roadmap-grid">
-            {ROADMAPS.map((roadmap) => (
-              <button
-                className={`connect-roadmap-card connect-theme-${roadmap.theme}`}
-                key={roadmap.id}
-                onClick={() => onSelectCareer(roadmap.id)}
-                aria-label={`Explore ${roadmap.title} career roadmaps`}
-              >
-                <div className="connect-roadmap-art">
-                  <LandingIcon name={roadmap.icon} size={59} />
-                </div>
-                <h3>{roadmap.title}</h3>
-                <div className="connect-roadmap-bottom">
-                  <p>Skills, tools, roles and a step-by-step roadmap.</p>
-                  <span className="connect-roadmap-arrow">
-                    <LandingIcon name="arrow" size={22} />
-                  </span>
-                </div>
-              </button>
             ))}
           </div>
         </div>
-      </section>
-      <footer className="connect-footer">
-        <div className="connect-container">
-          <span>© {new Date().getFullYear()} Campus Web Connect</span>
-          <button onClick={() => onNavigate("account")}>
-            Create your free account <LandingIcon name="arrow" size={17} />
+        <div className="cc-hero-callouts">
+          <button
+            className="cc-callout cc-callout-college"
+            onClick={() => onNavigate("colleges-admissions")}
+          >
+            <LandingIcon name="building" size={30} />
+            <span>
+              <strong>Browse Colleges</strong>
+              <small>
+                Find the right place
+                <br />
+                for your future
+              </small>
+            </span>
           </button>
+          <button
+            className="cc-callout cc-callout-career"
+            onClick={() => onNavigate("careers-roadmap")}
+          >
+            <LandingIcon name="briefcase" size={30} />
+            <span>
+              <strong>Explore Careers</strong>
+              <small>
+                Step-by-step
+                <br />
+                roadmaps in tech
+              </small>
+            </span>
+          </button>
+          <button
+            className="cc-callout cc-callout-community"
+            onClick={() => onNavigate("community")}
+          >
+            <LandingIcon name="people" size={30} />
+            <span>
+              <strong>Find your community</strong>
+              <small>
+                Make connections
+                <br />
+                with fellow students
+              </small>
+            </span>
+          </button>
+          <button
+            className="cc-callout cc-callout-mentor"
+            onClick={() => onNavigate("mentorship")}
+          >
+            <LandingIcon name="user" size={29} />
+            <span>
+              <strong>Get Guidance</strong>
+              <small>
+                Plan your questions
+                <br />
+                and next steps
+              </small>
+            </span>
+          </button>
+          <span className="cc-future-note">
+            Your future
+            <br />
+            starts here <span>↙</span>
+          </span>
         </div>
-      </footer>
+      </section>
+      <div className="cc-content">
+        <div className="cc-feature-grid">
+          <section className="cc-panel cc-find">
+            <div className="cc-panel-title">
+              <span className="cc-feature-icon">
+                <LandingIcon name="building" size={30} />
+              </span>
+              <div>
+                <h2>Find Your Perfect College</h2>
+                <p>Explore colleges by location, courses, fees and more.</p>
+              </div>
+              <button
+                className="cc-link"
+                onClick={() => onNavigate("colleges-admissions")}
+              >
+                View all →
+              </button>
+            </div>
+            <form className="cc-college-search" onSubmit={search}>
+              <LandingIcon name="search" size={18} />
+              <input
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                aria-label="Search featured colleges"
+                placeholder="Search by name, location, course…"
+              />
+              <button className="cc-primary">Search</button>
+            </form>
+            <div className="cc-chips">
+              {chips.map((chip) => (
+                <button
+                  className={applied === chip ? "selected" : ""}
+                  key={chip}
+                  onClick={() => {
+                    setQuery(applied === chip ? "" : chip);
+                    setApplied(applied === chip ? "" : chip);
+                  }}
+                >
+                  {chip}
+                  {applied === chip ? " ×" : ""}
+                </button>
+              ))}
+              {applied && (
+                <button
+                  onClick={() => {
+                    setApplied("");
+                    setQuery("");
+                  }}
+                >
+                  Clear
+                </button>
+              )}
+            </div>
+          </section>
+          <section className="cc-panel cc-paths">
+            <div className="cc-panel-title">
+              <span className="cc-feature-icon cc-green">
+                <LandingIcon name="shield" size={28} />
+              </span>
+              <div>
+                <h2>Explore Career Paths</h2>
+                <p>Find the skills, tools and steps for your next chapter.</p>
+              </div>
+              <button
+                className="cc-link"
+                onClick={() => onNavigate("careers-roadmap")}
+              >
+                View all →
+              </button>
+            </div>
+            <div className="cc-path-list">
+              {ROADMAPS.map((roadmap, i) => (
+                <button
+                  key={roadmap.id}
+                  className={`cc-tone-${i}`}
+                  onClick={() => onSelectCareer(roadmap.id)}
+                >
+                  <LandingIcon name={roadmap.icon} size={31} />
+                  <span>{roadmap.title}</span>
+                </button>
+              ))}
+            </div>
+          </section>
+          <section className="cc-panel cc-community">
+            <div className="cc-panel-title">
+              <span className="cc-feature-icon">
+                <LandingIcon name="people" size={28} />
+              </span>
+              <div>
+                <h2>Join the Community</h2>
+                <p>A space for curious students and future possibilities.</p>
+              </div>
+            </div>
+            <ul>
+              {[
+                "Start with your student profile",
+                "Share what you want to learn",
+                "Discover your next step",
+              ].map((text) => (
+                <li key={text}>
+                  <span>✓</span>
+                  {text}
+                </li>
+              ))}
+            </ul>
+            <button
+              className="cc-primary"
+              onClick={() => onNavigate("community")}
+            >
+              Explore Community →
+            </button>
+          </section>
+        </div>
+        <div className="cc-discovery-grid">
+          <section className="cc-panel cc-popular">
+            <div className="cc-section-head">
+              <div>
+                <h2>
+                  {applied
+                    ? `Colleges matching “${applied}”`
+                    : "Popular Colleges"}
+                </h2>
+                <p>Get to know campuses, courses and opportunities.</p>
+              </div>
+              <button
+                className="cc-link"
+                onClick={() => onNavigate("colleges-admissions")}
+              >
+                View all →
+              </button>
+            </div>
+            <div className="cc-colleges-grid">
+              {matches.map((college) => (
+                <article className="cc-college" key={college.id}>
+                  <div className="cc-college-photo">
+                    <button
+                      className="cc-photo-link"
+                      onClick={() => onSelectCollege(college)}
+                      aria-label={`View ${college.name}`}
+                    >
+                      <CollegeImage college={college} />
+                    </button>
+                    <button
+                      className={`cc-save ${saved.includes(college.id) ? "saved" : ""}`}
+                      title="Shortlist on this device"
+                      aria-label={`${saved.includes(college.id) ? "Unsave" : "Save"} ${college.name} on this device`}
+                      aria-pressed={saved.includes(college.id)}
+                      onClick={() => toggle(college.id)}
+                    >
+                      <LandingIcon name="heart" size={17} />
+                    </button>
+                  </div>
+                  <div className="cc-college-info">
+                    <h3>{college.name}</h3>
+                    <p>
+                      <LandingIcon name="pin" size={12} />
+                      {college.subLocation || college.location}
+                    </p>
+                    <div className="cc-college-rank">
+                      {college.nirfRank
+                        ? `NIRF rank #${college.nirfRank}`
+                        : college.category || "Explore college details"}
+                    </div>
+                    <div className="cc-programs">
+                      {String(college.programs || "Courses & admissions")
+                        .split(",")
+                        .slice(0, 2)
+                        .map((program) => (
+                          <span key={program}>{program.trim()}</span>
+                        ))}
+                    </div>
+                    <button
+                      className="cc-detail-link"
+                      onClick={() => onSelectCollege(college)}
+                    >
+                      View Details →
+                    </button>
+                  </div>
+                </article>
+              ))}
+            </div>
+            {!matches.length && (
+              <p className="cc-no-results">
+                No matching colleges in the current catalogue. Try another
+                search or view all colleges.
+              </p>
+            )}
+          </section>
+          <section className="cc-panel cc-trending">
+            <div className="cc-section-head">
+              <h2>
+                <span aria-hidden="true">✦</span> Featured Career Roadmaps
+              </h2>
+              <button
+                className="cc-link"
+                onClick={() => onNavigate("careers-roadmap")}
+              >
+                View all →
+              </button>
+            </div>
+            <ol>
+              {ROADMAPS.map((roadmap, i) => (
+                <li key={roadmap.id}>
+                  <button onClick={() => onSelectCareer(roadmap.id)}>
+                    <span className={`cc-rank cc-rank-${i}`}>{i + 1}</span>
+                    <span>
+                      <strong>{roadmap.title} Roadmap</strong>
+                      <small>
+                        {roadmap.stages.length} steps · Skills, learning and
+                        projects
+                      </small>
+                    </span>
+                    <LandingIcon name="chevron" size={16} />
+                  </button>
+                </li>
+              ))}
+            </ol>
+          </section>
+        </div>
+        <div className="cc-banner-grid">
+          <section className="cc-banner cc-banner-career">
+            <div className="cc-banner-art">
+              <LandingIcon name="code" size={75} />
+            </div>
+            <div>
+              <h2>
+                Not Sure Which Career
+                <br />
+                Is Right for You?
+              </h2>
+              <p>
+                Discover different paths and find what sparks your curiosity.
+              </p>
+              <button
+                className="cc-primary"
+                onClick={() => onNavigate("careers-roadmap")}
+              >
+                Explore Career Options →
+              </button>
+            </div>
+            <span className="cc-banner-spark">✦</span>
+          </section>
+          <section className="cc-banner cc-banner-community">
+            <div>
+              <h2>
+                Your Journey.
+                <br />
+                Your Student Profile.
+              </h2>
+              <p>
+                Keep your interests, education and future goals in one place.
+              </p>
+              <button
+                className="cc-primary"
+                onClick={() =>
+                  onNavigate(user ? "student-dashboard" : "account")
+                }
+              >
+                {user ? "Open My Profile" : "Create Your Profile"} →
+              </button>
+            </div>
+            <LandingIcon name="people" size={82} />
+          </section>
+          <section className="cc-banner cc-banner-mentor">
+            <div>
+              <h2>
+                A Little Guidance.
+                <br />A Clearer Next Step.
+              </h2>
+              <p>Prepare your questions and map out your college journey.</p>
+              <button
+                className="cc-primary"
+                onClick={() => onNavigate("mentorship")}
+              >
+                Explore Guidance →
+              </button>
+            </div>
+            <LandingIcon name="bulb" size={78} />
+          </section>
+        </div>
+        <footer className="cc-footer">
+          <span>© {new Date().getFullYear()} Campus Connect</span>
+          <span>Discover your possibilities. Build your future.</span>
+          <button
+            onClick={() => onNavigate(user ? "student-dashboard" : "account")}
+          >
+            {user ? "My profile" : "Sign In / Up"} →
+          </button>
+        </footer>
+      </div>
     </div>
   );
 }

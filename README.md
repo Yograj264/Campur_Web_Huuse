@@ -1,83 +1,106 @@
-# Campus Web Connect
+# Campus Connect
 
-A small React JavaScript website with a Django college catalogue. The current scope follows the landing page only.
+React JavaScript frontend with a Django backend, student profiles and a custom administration panel.
 
-## Included
+## Current features
 
-- Landing page, hero, college carousel, and five career cards.
-- College directory with search and read-only college details.
-- Five simple editorial career guides, selected from the landing cards.
-- Django session authentication with email OTP registration, email/password login, logout, password recovery and optional Twilio phone OTP. See [Authentication setup and working flow](docs/AUTHENTICATION_GUIDE.md).
-- A consistent responsive header across home, colleges, and careers.
-- Django admin for editing colleges and one read-only catalogue endpoint.
+- College discovery, search/filtering, grid/list views, details and browser-local comparison/shortlists.
+- Database-backed career roadmaps, learning resources and published study plans.
+- Django session authentication, email signup/recovery OTP and optional Twilio phone OTP.
+- Private student profiles with avatar/cover uploads, interests, goals and searchable skills.
+- Public community questions and a private guidance-question planner.
+- Custom staff admin at `/admin/` for colleges, students, courses, plans and roadmaps. Original Django administration remains at `/django-admin/`.
 
-Dashboard, community discussions, mentor requests, profile progress, notifications, reminders, assessment, ROI, comparison dialogs, and the unfinished Expo starter have been removed from the active application. Plan Your Future now opens the career guides.
+Live mentor matching, bookings, notifications, Google sign-in and subscription billing are not implemented.
 
-## Run on this computer
+## Run locally (PowerShell)
+
+From the project directory, activate the existing environment once per terminal:
 
 ```powershell
 cd "D:\College Project\Campus"
-& "..\.venv\Scripts\python.exe" manage.py runserver
+& "..\.venv\Scripts\Activate.ps1"
+python manage.py runserver 0.0.0.0:8000
 ```
 
-Open http://127.0.0.1:8000/. For automatic frontend updates, keep Django running, open another terminal in Campus, run `npm run dev`, and open http://localhost:3000/static/frontend/.
+Open [Website](http://127.0.0.1:8000/) or [Admin](http://127.0.0.1:8000/admin/). Admin requires an existing active staff/superuser account.
 
-## Source layout
-
-```text
-src/
-  App.jsx                         Screen selection and college loading
-  api.js                          Read-only API helper
-  main.jsx / index.css            Entry point and shared basics
-  screens/
-    HomeScreen.jsx / .css         Landing-page content and styling
-    CollegesScreen.jsx            Directory and college detail view
-    CareersScreen.jsx             Roadmap list and selected guide
-    LoginPage.jsx / .css          Connected account forms and sliding panels
-  components/landing/
-    LandingHeader.jsx             Header and responsive menu
-    LandingIcon.jsx               SVG icons
-    CollegeImage.jsx              College image and fallback
-  data/roadmaps.js                 Five editorial guide definitions
-portal/
-  views.py / urls.py              College catalogue and authentication routes
-  models.py / admin.py            Catalogue model and admin
-  demo_data.json                  Sample colleges for seeding
-  management/commands/seed_demo.py
-  migrations/                     Existing schema history
-```
-
-## Data and compatibility
-
-Your existing db.sqlite3 is preserved. Only College is exposed through the active API and admin. Legacy models and their original migration are intentionally retained to avoid dropping stored discussion, answer, preference, or mentor-question records. They have no public routes or application features. Retire those tables later only through a deliberate data-retention decision.
+For a fresh setup, install dependencies and prepare the application before starting Django:
 
 ```powershell
-& "..\.venv\Scripts\python.exe" manage.py migrate
-& "..\.venv\Scripts\python.exe" manage.py seed_demo
-& "..\.venv\Scripts\python.exe" manage.py createsuperuser
+python -m pip install -r requirements.txt
+npm ci --include=dev
+python manage.py migrate
+python manage.py seed_demo
+npm run build
 ```
 
-Normal seeding inserts missing sample colleges and preserves existing edits. `seed_demo --refresh` intentionally replaces matching sample college records. Add or edit current records in /admin/. All supplied college facts are sample information, not live verified admissions data.
+`.env.example` lists configuration keys without credentials. Copy it to `.env` only if you do not already have one; preserve existing values. Create a staff account with `python manage.py createsuperuser` if necessary.
 
-## Check and build
+For frontend development, keep Django running, run `npm run dev` in a second terminal and open http://localhost:3000/static/frontend/. The custom admin is served by Django at port 8000. After source edits, run `npm run build` to update Django's frontend, then restart Django and refresh.
+
+## Folder layout
+
+| Path | Purpose |
+| --- | --- |
+| `src/admin/` | Custom admin login, dashboard, forms and API helper |
+| `src/screens/` | Home, college, roadmap, login and student screens |
+| `src/components/landing/` | Shared header, icons, images and shared CSS |
+| `src/components/auth/` | Authentication icons |
+| `src/data/` | Frontend helpers, profile choices and initial roadmap definitions |
+| `portal/` | Models, validated forms, public/admin APIs and tests |
+| `portal/migrations/` | Required database history; do not delete |
+| `portal/management/commands/` | Seeding and expired-auth-record cleanup |
+| `campus_project/` | Django settings, URLs, WSGI/ASGI and network configuration |
+| `public/` | Source images copied during the frontend build |
+| `static/frontend/` | Current generated frontend served by Django; keep this to run without rebuilding |
+| `templates/index.html` | Generated Django frontend entry point |
+| `scripts/` | Build/check scripts and Windows cleanup/LAN helpers |
+| `docs/` | Current editing, authentication, deployment and usage guides |
+| `output/` | Preserved project-review PDFs, diagrams and earlier document deliverables |
+| `backups/` | Private local database snapshots, excluded from Git |
+
+`dist/`, Python caches and collected `staticfiles/` are generated outputs. `node_modules/` contains installed dependencies. These directories are excluded from Git. The source `index.html` and generated `templates/index.html` serve different build/runtime purposes and both are required. Public images and their built copies are also intentional.
+
+## Checks and cleanup
 
 ```powershell
 npm run lint
+npm run test:data
 npm run build
-& "..\.venv\Scripts\python.exe" manage.py check
-& "..\.venv\Scripts\python.exe" manage.py test portal
+python manage.py check
+python manage.py test
+npm run clean
 ```
 
-`npm run lint` checks JavaScript/JSX syntax and resolves the application imports with esbuild. `npm run build` builds Vite, replaces compiled assets, copies public images, and updates the Django template. If a manually started Django server still references old assets after rebuilding, restart it and hard-refresh the browser. `npm run clean` removes dist and source Python caches, preserving the database and current frontend assets.
+`lint` checks JavaScript/JSX syntax and import resolution. `test:data` checks college/roadmap helpers. `build` creates Vite output and updates the Django template/static assets.
 
-The frontend uses ordinary CSS; TypeScript and Tailwind are no longer needed. Historical PDFs under output are retained as documents about earlier project versions, not descriptions of this simplified version.
+`clean` removes disposable `dist/` output and Python bytecode caches. It preserves source, environment variables, databases, backups, documents, installed dependencies and current Django frontend assets. To remove the separately generated collected-static directory too, run:
 
-## Render
+```powershell
+npm run clean -- -IncludeCollectedStatic
+```
 
-Build Command: `bash build.sh`
+Use that option only when collected static files are not serving a deployed site. Regenerate them with `python manage.py collectstatic --noinput` before production use.
 
-Start Command: `gunicorn campus_project.wsgi:application --bind 0.0.0.0:$PORT`
+The cleanup removed temporary sample preview servers/data, an unreferenced header, superseded screenshots and obsolete CSS. Source formatting is consistent, and duplicate shortlist parsing was replaced with the shared helper. No schema or user-data deletion is part of cleanup.
 
-Set `DJANGO_DEBUG=0`, a generated `DJANGO_SECRET_KEY`, and your hostname in `DJANGO_ALLOWED_HOSTS`. The build installs dependencies, builds React, collects static files for WhiteNoise, applies migrations, and imports missing sample colleges. The current database is still SQLite; ordinary Render filesystem storage is ephemeral. Configure durable database storage before retaining real production data.
+## Data and deployment
 
-More editing instructions: [docs/HOME_SCREEN_GUIDE.md](docs/HOME_SCREEN_GUIDE.md).
+The current database is SQLite (`db.sqlite3`). Uploaded profile images are stored privately in that database. Existing migrations and legacy tables remain to preserve data. Normal `seed_demo` adds missing sample colleges without overwriting edits; `--refresh` intentionally replaces matching sample records.
+
+Render build command: `bash build.sh`
+
+Render start command: `gunicorn campus_project.wsgi:application --bind 0.0.0.0:$PORT`
+
+Set `DJANGO_DEBUG=0`, a long random `DJANGO_SECRET_KEY`, and the Render hostname in `DJANGO_ALLOWED_HOSTS`. The build installs dependencies, builds React, collects static files, migrates and seeds missing sample colleges. Render and local databases are separate. Ordinary Render filesystem storage is ephemeral; use persistent storage/database configuration to retain production records.
+
+## Guides
+
+- [Custom admin](docs/CUSTOM_ADMIN_GUIDE.md)
+- [Authentication](docs/AUTHENTICATION_GUIDE.md) and [login UI](docs/AUTH_UI_GUIDE.md)
+- [Student profiles](docs/STUDENT_PROFILE_GUIDE.md)
+- [Home editing](docs/HOME_SCREEN_GUIDE.md)
+- [College directory](docs/ALL_COLLEGES_GUIDE.md) and [college details](docs/COLLEGE_DETAILS_GUIDE.md)
+- [Career roadmaps](docs/CAREER_ROADMAP_GUIDE.md)
+- [Local-network setup](docs/REDESIGN_AND_NETWORK_GUIDE.md)

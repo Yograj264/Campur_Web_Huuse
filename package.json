@@ -8,7 +8,8 @@
     "build": "vite build && node scripts/build-django.mjs",
     "preview": "vite preview",
     "clean": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/clean.ps1",
-    "lint": "node scripts/check-javascript.mjs"
+    "lint": "node scripts/check-javascript.mjs",
+    "test:data": "node scripts/test-college-details.mjs && node scripts/test-career-details.mjs"
   },
   "dependencies": {
     "react": "^19.0.1",

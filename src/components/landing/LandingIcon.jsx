@@ -1,5 +1,42 @@
 export function LandingIcon({ name, size = 24, className = "", ...props }) {
   const paths = {
+    home: (
+      <>
+        <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-8h6v8" />
+      </>
+    ),
+    camera: (
+      <>
+        <path d="M8 5 10 2h4l2 3h5v16H3V5Z" />
+        <circle cx="12" cy="12" r="4" />
+      </>
+    ),
+    settings: (
+      <>
+        <path d="m9 3-1 3-3 1-2 5 2 5 3 1 1 3h6l1-3 3-1 2-5-2-5-3-1-1-3Z" />
+        <circle cx="12" cy="12" r="3" />
+      </>
+    ),
+    heart: (
+      <path d="M20.8 4.6a5.4 5.4 0 0 0-7.6 0L12 5.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6L12 21l8.8-8.8a5.4 5.4 0 0 0 0-7.6Z" />
+    ),
+    bell: (
+      <>
+        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+      </>
+    ),
+    briefcase: (
+      <>
+        <rect x="2" y="7" width="20" height="15" rx="3" />
+        <path d="M8 7V3h8v4M2 13c7 4 13 4 20 0M12 12v5" />
+      </>
+    ),
+    people: (
+      <>
+        <circle cx="9" cy="7" r="4" />
+        <path d="M1 22v-3a8 8 0 0 1 16 0v3M17 3a4 4 0 0 1 0 8M19 14a6 6 0 0 1 4 6v2" />
+      </>
+    ),
     cap: (
       <>
         <path d="m2 8 10-5 10 5-10 5L2 8Z" fill="currentColor" stroke="none" />
@@ -75,6 +112,12 @@ export function LandingIcon({ name, size = 24, className = "", ...props }) {
       </>
     ),
     arrow: <path d="M4 12h15m-6-6 6 6-6 6" />,
+    user: (
+      <>
+        <circle cx="12" cy="8" r="4" />
+        <path d="M4 22v-2a8 8 0 0 1 16 0v2" />
+      </>
+    ),
     search: (
       <>
         <circle cx="10" cy="10" r="7" />
